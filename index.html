@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="alpin" data-font="grotesk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRSV — l'annuaire des entreprises suisses</title>
+  <meta name="description" content="Trouvez les entreprises de Suisse, canton par canton et par corps de métier. Référencement HRSV — un service privé, payant et volontaire." />
+
+  <!-- Thème appliqué AVANT le rendu pour éviter tout flash de couleurs -->
+  <script>
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem("swisssearch.prefs") || "{}");
+        var r = document.documentElement;
+        if (s.theme) r.setAttribute("data-theme", s.theme);
+        if (s.font)  r.setAttribute("data-font", s.font);
+        if (s.accent) r.style.setProperty("--accent", s.accent);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- 3 familles = 3 presets de typo (Grotesque / Éditorial / Géométrique) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Décor : grille en perspective + voile d'accent (réglé par le thème) -->
+  <div class="bg-scene" aria-hidden="true">
+    <div class="bg-wash bg-wash--1"></div>
+    <div class="bg-wash bg-wash--2"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="brand" href="#/" aria-label="HRSV — accueil">
+      <span class="brand__logo" id="brandLogo"></span>
+      <span class="brand__text">
+        <span class="brand__name" id="brandName">HRSV  ≈+</span>
+        <span class="brand__tag" id="brandTag">Annuaire suisse</span>
+      </span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#/" data-i18n="nav.home">Accueil</a>
+      <a href="#/cantons" data-i18n="nav.cantons">Cantons</a>
+      <a href="#/categories" data-i18n="nav.categories">Corps de métier</a>
+      <label class="lang-select" aria-label="Langue / Language">
+        <svg class="lang-select__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9S9.5 5.5 12 3Z"></path></svg>
+        <select id="langSelect">
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+          <option value="en">EN</option>
+        </select>
+      </label>
+      <a class="nav__cta" href="#/inscription"><span class="nav__cta-full" data-i18n="nav.cta">Référencer mon entreprise</span><span class="nav__cta-mini" data-i18n="nav.ctaMini">Référencer</span><svg class="nav__cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+    </nav>
+  </header>
+
+  <!-- Contenu rendu par app.js -->
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div class="footer__inner wrap">
+      <div class="footer__top">
+        <div class="footer__brandcol">
+          <div class="footer__brand">
+            <span class="brand__logo brand__logo--sm" id="brandLogoFoot"></span>
+            <strong id="brandNameFoot">HRSV  ≈+</strong>
+          </div>
+          <p class="footer__note" id="footerNote">
+            Annuaire des entreprises membres. Le référencement est un service privé,
+            payant et <strong>volontaire</strong> : une entreprise n'apparaît ici
+            qu'après avoir accepté de s'y inscrire.
+          </p>
+        </div>
+        <nav class="footer__cols" aria-label="Liens du pied de page">
+          <div class="footer__col">
+            <h4 data-i18n="footer.explore">Explorer</h4>
+            <a href="#/" data-i18n="nav.home">Accueil</a>
+            <a href="#/cantons" data-i18n="nav.cantons">Cantons</a>
+            <a href="#/categories" data-i18n="nav.categories">Corps de métier</a>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer.info">Informations</h4>
+            <a href="#/prix" data-i18n="footer.prix">Prix</a>
+            <a href="#/cgv" data-i18n="footer.cgv">CGV</a>
+            <a href="#/contact" data-i18n="footer.contact">Contact</a>
+            <a href="#/inscription" data-i18n="nav.cta">Référencer mon entreprise</a>
+          </div>
+        </nav>
+      </div>
+      <details class="footer__credits">
+        <summary data-i18n="footer.credits">Crédits photos</summary>
+        <p>Photographies des corps de métier issues de
+        <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>,
+        sous licence libre. Auteurs :
+        Restauration © Basile Morin (CC BY-SA 4.0) · Construction métallique © W. Carter (domaine public) ·
+        Bâtiment © Acabashi (CC BY-SA 4.0) · Commerce © Steffen Mokosch (CC BY-SA 4.0) ·
+        Santé &amp; Bien-être © Alvinategyeka (CC BY-SA 4.0) · Beauté &amp; Coiffure © K. Artyom (CC BY-SA 4.0) ·
+        Services &amp; Conseil © Shixart1985 (CC BY 2.0) · Informatique © Markus Spiske (domaine public) ·
+        Transport © Mr.choppers (CC BY-SA 3.0) · Immobilier © Rene Bieder (domaine public) ·
+        Finance © Ank Kumar (CC BY-SA 4.0) · Automobile © Martin Vorel (CC BY-SA 4.0) ·
+        Industrie © Marek Ślusarczyk (CC BY 3.0) · Artisanat © Jorge Royan (CC BY-SA 3.0) ·
+        Autre / Divers © Dale Cruse (CC BY 4.0).</p>
+        <p>Photographies des chefs-lieux issues de
+        <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>,
+        utilisées sous licence libre. Auteurs :
+        Zurich © chensiyuan (CC BY-SA 4.0) · Berne © H. Helmlechner (CC BY-SA 4.0) ·
+        Lucerne © chensiyuan (CC BY-SA 4.0) · Altdorf (Uri) © Rudolf Ammann (CC BY 2.0) ·
+        Schwytz © Markus Bernet (CC BY-SA 2.0) · Sarnen © Roland Zumbühl / Picswiss (CC BY-SA 3.0) ·
+        Stans © Tilman AB (domaine public) · Glaris © Roland Zumbühl / Picswiss (CC BY-SA 3.0) ·
+        Zoug © LohriPR (CC BY-SA 4.0) · Fribourg © Roland Zumbuehl (CC BY-SA 4.0) ·
+        Soleure © Christian David (CC BY-SA 4.0) · Bâle © Taxiarchos228 (FAL) ·
+        Liestal © Umschattiger (CC BY-SA 3.0) · Schaffhouse © Wikimedia Commons (CC BY-SA 3.0) ·
+        Herisau © Roland Zumbühl (GFDL) · Appenzell © Adrian Michael (domaine public) ·
+        Saint-Gall © Hansueli Krapf (CC BY-SA 3.0) · Coire © Amarco90 (CC BY-SA 4.0) ·
+        Aarau © Wikimedia Commons (CC BY-SA 3.0) · Frauenfeld © Odonata (CC BY-SA 2.5 ch) ·
+        Bellinzone © H005 (CC BY-SA 3.0) · Lausanne © Wikimedia Commons (CC BY-SA 3.0) ·
+        Sion © Christian David (CC BY-SA 4.0) · Neuchâtel © Françoise Kuenzi (CC BY-SA 4.0) ·
+        Genève © Pmau (CC BY-SA 4.0) · Delémont © Jérémy Toma (CC BY-SA 4.0).</p>
+      </details>
+      <p class="footer__copy">© <span id="year"></span> HRSV — Neuchâtel, Suisse</p>
+    </div>
+  </footer>
+
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="thumbGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F0202E"/><stop offset="1" stop-color="#D60812"/>
+      </linearGradient></defs>
+      <rect width="100" height="100" rx="22" fill="#fff"/>
+      <line x1="62" y1="62" x2="84" y2="84" stroke="#D60812" stroke-width="13" stroke-linecap="round"/>
+      <circle cx="44" cy="44" r="30" fill="url(#thumbGrad)"/>
+      <rect x="39" y="27" width="10" height="34" rx="2.2" fill="#fff"/>
+      <rect x="27" y="39" width="34" height="10" rx="2.2" fill="#fff"/>
+    </svg>
+  </template>
+
+  <!-- Données (ré-écrites par agent.py — chargées via <script> pour marcher en file://) -->
+  <script src="data/entreprises.js"></script>
+  <script src="assets/globe.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
