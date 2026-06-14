@@ -34,7 +34,7 @@
                       (ex. "https://formspree.io/f/abcdwxyz"). Tant que c'est vide,
                       le formulaire bascule automatiquement sur un lien mailto.
        ---------------------------------------------------------------- */
-    contactEmail: "contact@hrsv.ch",
+    contactEmail: "buchhalltung@hrsv.ch",
     contactPhone: "",
     formEndpoint: "",
   };
