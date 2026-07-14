@@ -1,6 +1,6 @@
 /* Généré automatiquement par agent.py — ne pas éditer à la main. */
 window.CLOTHESUP_DATA = {
-  "generated_at": "2026-07-14",
+  "generated_at": "2026-07-15",
   "demo": false,
   "categories": [
     {
@@ -14078,6 +14078,1474 @@ window.CLOTHESUP_DATA = {
       "category": "batiment",
       "uid": "CHE315789467",
       "description": "Dienstleistungen im Baugewerbe, insbesondere Ausführung von Abbruch-, Rückbau-, Renovations-, Montage- und Demontagearbeiten, Asphalt-/Betonsanierungen sowie weitere damit zusammenhängende Dienstleist"
+    },
+    {
+      "name": "2nd love GmbH",
+      "address": "Romanshornerstrasse 18",
+      "npa": "9300",
+      "locality": "Wittenbach",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE155701213",
+      "description": "Die Gesellschaft bezweckt den Verkauf von Second-Hand- und Second-Season-Damen und -Herrenbekleidung, Schuhen sowie diversen Accessoires auf Kommissionsbasis. Die Gesellschaft kann Zweigniederlassunge"
+    },
+    {
+      "name": "Äberdinger Allerlei klg",
+      "address": "Eberdingen 2",
+      "npa": "6265",
+      "locality": "Pfaffnau",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE356382011",
+      "description": "Herstellung von Dekorationsartikeln, Geschenkartikeln und Blumenarrangements sowie Handel mit Waren aller Art, insbesondere mit Eiern, Süssmost, Eingemachtem, Obst und Gemüse sowie alkoholfreien Geträ"
+    },
+    {
+      "name": "Adilson Gomes da Silva - Capricho Bäckerei",
+      "address": "Balsbergweg 11",
+      "npa": "8302",
+      "locality": "Kloten",
+      "canton": "ZH",
+      "category": "restaurant",
+      "uid": "CHE311404900",
+      "description": "Betrieb einer Bäckerei mit Café sowie Herstellung und Verkauf von Backwaren, Konditorei- und Confiserieprodukten, insbesondere portugiesischen, brasilianischen und schweizerischen Spezialitäten. Verka"
+    },
+    {
+      "name": "Alessio Gipsergeschäft GmbH",
+      "address": "Eichenstrasse 5",
+      "npa": "9404",
+      "locality": "Rorschacherberg",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE358638492",
+      "description": "Die Gesellschaft bezweckt den Betrieb eines Gipsergeschäftes. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- u"
+    },
+    {
+      "name": "ALINET",
+      "address": "Via delle Scuole 17",
+      "npa": "6900",
+      "locality": "Paradiso",
+      "canton": "TI",
+      "category": "autre",
+      "uid": "CHE243190476",
+      "description": "ALINET avrà per scopo precipuo l'educazione, la promozione e la divulgazione riferite al mondo dell'aviazione generale al fine di avvicinare i giovani al tema dei viaggi aerei a basso e medio costo, i"
+    },
+    {
+      "name": "Allwaspa Infrarotkabinen AG",
+      "address": "Stationsstrasse 90",
+      "npa": "6023",
+      "locality": "Rothenburg",
+      "canton": "LU",
+      "category": "beaute",
+      "uid": "CHE486451338",
+      "description": "Die Gesellschaft bezweckt den Handel mit und den Vertrieb von Infrarotkabinen und damit zusammenhängenden Produkten samt Zubehör, einschliesslich Beratung, Lieferung, Montage und Service. Die Gesellsc"
+    },
+    {
+      "name": "ALP GLOBAL SUISSE Sagl",
+      "address": "Via Serafino Balestra 5",
+      "npa": "6900",
+      "locality": "Lugano",
+      "canton": "TI",
+      "category": "commerce",
+      "uid": "CHE473135595",
+      "description": "La società ha per scopo il commercio, la rappresentanza, l'importazione, l'esportazione, la distribuzione, la lavorazione e la messa in opera di materiali da costruzione, di macchinari ed accessori, d"
+    },
+    {
+      "name": "AmaRoh GmbH",
+      "address": "Hintere Gasse 6",
+      "npa": "3700",
+      "locality": "Spiez",
+      "canton": "BE",
+      "category": "autre",
+      "uid": "CHE369583814",
+      "description": "Die Gesellschaft bezweckt die Vermietung, Verwaltung, Bewirtschaftung und Vermittlung von Immobilien, die Realisierung und Begleitung von Überbauungen sowie den Handel mit Waren aller Art und die Erbr"
+    },
+    {
+      "name": "Analytical Investment AG",
+      "address": "Huobmattstrasse 3",
+      "npa": "6045",
+      "locality": "Meggen",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE478089726",
+      "description": "Die Gesellschaft bezweckt die Beteiligung an Gesellschaften im In- und Ausland wie auch ihre eigene Vermögensverwaltung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften in der Sch"
+    },
+    {
+      "name": "Apaydin - ARGO Rückbau und Demontage Service",
+      "address": "Hauptstrasse 26",
+      "npa": "8114",
+      "locality": "Dänikon",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE276657535",
+      "description": "Industriedemontagen, Rückbauarbeiten, Transporte, Recycling und Entsorgung."
+    },
+    {
+      "name": "Arcandeo GmbH",
+      "address": "Durststrasse 9",
+      "npa": "8706",
+      "locality": "Meilen",
+      "canton": "ZH",
+      "category": "informatique",
+      "uid": "CHE295721820",
+      "description": "Die Gesellschaft bezweckt die Erbringung von strategischer Beratung und Dienstleistungen für Unternehmen und Privatpersonen, insbesondere im Bereich Technologie und Kapitalmarkt. Die Gesellschaft kann"
+    },
+    {
+      "name": "Ardi Bau GU GmbH",
+      "address": "Bahnhofstrasse 2",
+      "npa": "6312",
+      "locality": "Steinhausen",
+      "canton": "ZG",
+      "category": "batiment",
+      "uid": "CHE482831989",
+      "description": "Die Gesellschaft bezweckt die Ausführung von Bauarbeiten aller Art, insbesondere die Ausführung von Arbeiten an Neu- und Altbauten, Ausbauten, Umbauten, Renovationen und Reparaturen an Liegenschaften."
+    },
+    {
+      "name": "Arex Concept Sagl",
+      "address": "Via Ginevra 5",
+      "npa": "6900",
+      "locality": "Lugano",
+      "canton": "TI",
+      "category": "commerce",
+      "uid": "CHE285823092",
+      "description": "La società ha per scopo l'importazione, la distribuzione, l'e-commerce, la promozione, la commercializzazione di sigarette elettroniche, liquidi, ricambi e merchandising nonché di altri beni e servizi"
+    },
+    {
+      "name": "Aroma Studio KlG",
+      "address": "Unterer Kreuzacker 4",
+      "npa": "8645",
+      "locality": "Rapperswil-Jona",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE422822484",
+      "description": "Handel, Vertrieb und Vermarktung von Duftsystemen, Raumdüften und Hospitality Produkten sowie Erbringung von Dienstleistungen im Bereich Raumduftkonzepte und Markenauftritt."
+    },
+    {
+      "name": "Aurea Manus Bekiopoulos",
+      "address": "Kosthausstrasse 6",
+      "npa": "6010",
+      "locality": "Kriens",
+      "canton": "LU",
+      "category": "informatique",
+      "uid": "CHE221161845",
+      "description": "Dienstleistungen aller Art im Bau-, Handwerks- und Technikbereich. Haupt-, General- oder Totalunternehmen (unter Beizug von Fachpersonal). Handel mit Waren aller Art."
+    },
+    {
+      "name": "Autohaus Etzel GmbH",
+      "address": "Chaltenbodenstrasse 6c",
+      "npa": "8834",
+      "locality": "Feusisberg",
+      "canton": "SZ",
+      "category": "commerce",
+      "uid": "CHE157440845",
+      "description": "Die Gesellschaft bezweckt den Handel mit Automobilen, den An- und Verkauf, Import und Export von Neu- und Gebrauchtwagen aller Art sowie die Erbringung von Dienstleistungen aller Art der Autobranche."
+    },
+    {
+      "name": "Automaticly KLG",
+      "address": "Bottigenstrasse 391",
+      "npa": "3020",
+      "locality": "Bern",
+      "canton": "BE",
+      "category": "informatique",
+      "uid": "CHE219862157",
+      "description": "Die Gesellschaft bezweckt die Entwicklung und den Betrieb von Kl-gestützten Automatisierungs- und Workflow-Lösungen für Unternehmen. Sie entwickelt Software, digitale Assistenten und Agentensysteme zu"
+    },
+    {
+      "name": "AutoStore System Switzerland AG",
+      "address": "Claridenstrasse 35",
+      "npa": "8002",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "informatique",
+      "uid": "CHE206297288",
+      "description": "Der Zweck der Gesellschaft ist der Handel mit sowie die Erbringung von Dienstleistungen im Zusammenhang mit Lagersystemen und Software für die elektronische Datenverarbeitung in der Schweiz und im Aus"
+    },
+    {
+      "name": "A- Zuberbühler Consulting AG",
+      "address": "Dachseggstrasse 15",
+      "npa": "8630",
+      "locality": "Rüti (ZH)",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE170014663",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungs- und Dienstleistungen für Unternehmen und öffentliche Stellen. Sie begleitet Organisationen und Personen in den Bereichen Entwicklung, Leadership"
+    },
+    {
+      "name": "Azzo Reinigung GmbH",
+      "address": "Ringstrasse 3",
+      "npa": "9300",
+      "locality": "Wittenbach",
+      "canton": "SG",
+      "category": "transport",
+      "uid": "CHE343540766",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Reinigungsdienstleistungen aller Art sowie Transportdienstleistungen, insbesondere Umzüge, sowie den Handel mit Waren und Produkten aller Art, insbesondere"
+    },
+    {
+      "name": "B+H immo ag",
+      "address": "Bäbenmattweg 1",
+      "npa": "5727",
+      "locality": "Oberkulm",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE365157482",
+      "description": "Die Gesellschaft bezweckt den Erwerb von Grundstücken, deren Überbauung sowie Umbau, Verwaltung, Vermietung, Veräusserung und Finanzierung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesell"
+    },
+    {
+      "name": "Bomsori AG",
+      "address": "Ziegeleiweg 3",
+      "npa": "6048",
+      "locality": "Horw",
+      "canton": "LU",
+      "category": "services",
+      "uid": "CHE476402284",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Bereich der Informationstechnologie. Dies umfasst insbesondere die Entwicklung, den Vertrieb, die Lizenzierung und den Betrieb von Soft"
+    },
+    {
+      "name": "Brandenberger Transport + Entsorgung AG",
+      "address": "Im Büel 17",
+      "npa": "8234",
+      "locality": "Stetten (SH)",
+      "canton": "SH",
+      "category": "services",
+      "uid": "CHE335882868",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Transport- und Entsorgungsdienstleistungen aller Art, insbesondere das Betreiben eines Mulden-Service. Die Gesellschaft kann Zweigniederlassungen und Tocht"
+    },
+    {
+      "name": "Buzea Tech Solutions",
+      "address": "Am Mattenhof 2d",
+      "npa": "6010",
+      "locality": "Kriens",
+      "canton": "LU",
+      "category": "services",
+      "uid": "CHE424331263",
+      "description": "Erbringung von Dienstleistungen im Bereich der Informationstechnologie, insbesondere Entwicklung von Software und Verkauf von damit zusammenhängenden Produkten."
+    },
+    {
+      "name": "Café Rauber, Supermarket",
+      "address": "Aeussere Dorfstrasse 57",
+      "npa": "3718",
+      "locality": "Kandersteg",
+      "canton": "BE",
+      "category": "restaurant",
+      "uid": "CHE422918380",
+      "description": "Betrieb eines Lebensmittelgeschäfts mit einer Kaffeeecke."
+    },
+    {
+      "name": "Caldain AG",
+      "address": "Bleichistrasse 8",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "informatique",
+      "uid": "CHE251893143",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungs-, Management- und Technologiedienstleistungen für Unternehmen, insbesondere in den Bereichen Strategie, Digitalisierung, künstliche Intelligenz ("
+    },
+    {
+      "name": "Catenate AG",
+      "address": "Baarerstrasse 55",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "services",
+      "uid": "CHE197649222",
+      "description": "Die Gesellschaft bezweckt die Beratung und Unterstützung von Unternehmen bezüglich der Konzeption, Umsetzung und Anwendung von Kommunikations- und Informationstechnologien sowie Entwicklung von und Ha"
+    },
+    {
+      "name": "Chrono4You GmbH",
+      "address": "Hochweidstrasse 10",
+      "npa": "8802",
+      "locality": "Kilchberg (ZH)",
+      "canton": "ZH",
+      "category": "commerce",
+      "uid": "CHE401989598",
+      "description": "Die Gesellschaft bezweckt den Handel, insbesondere den Online-, Einzel- und Grosshandel, den Import, Export, Vertrieb und die Vermittlung von neuen und gebrauchten Uhren, Schmuck, Edelsteinen, Edelmet"
+    },
+    {
+      "name": "CipherPeak GmbH",
+      "address": "Zukunftstrasse 12a",
+      "npa": "2503",
+      "locality": "Biel/Bienne",
+      "canton": "BE",
+      "category": "informatique",
+      "uid": "CHE254139870",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Informatikbereich, insbesondere Projektleitung, Software-Architektur, -Entwicklung und -Betrieb, Beratung und Schulung. Die Gesellschaf"
+    },
+    {
+      "name": "Coiffeur Shatha Al-Dulaimi",
+      "address": "Feldbergstrasse 140",
+      "npa": "4057",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "beaute",
+      "uid": "CHE407915397",
+      "description": "Betrieb eines Coiffeur- und Beautysalons, insbesondere Haarpflege, Makeup, Nagelpflege, Wimpern- und Augenbrauenbehandlung sowie Kosmetik."
+    },
+    {
+      "name": "Compagnie Emona GmbH",
+      "address": "Turmstrasse 18",
+      "npa": "6312",
+      "locality": "Steinhausen",
+      "canton": "ZG",
+      "category": "services",
+      "uid": "CHE365164186",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Consulting- und Vermittlungsdienstleistungen insbesondere im Bereich Capital Introduction und Corporate Finance. Sie vermittelt insbesondere Kontakte zwisc"
+    },
+    {
+      "name": "CONSTRUCCIONES GRANDE HERRAN",
+      "address": "Ulmizstrasse 127",
+      "npa": "3144",
+      "locality": "Köniz",
+      "canton": "BE",
+      "category": "batiment",
+      "uid": "CHE364351981",
+      "description": "Renovation Bau, Keramik, Trockenbau, Parket, Malerarbeiten."
+    },
+    {
+      "name": "Creative Movements by Bertényi",
+      "address": "Kastanienhof 2",
+      "npa": "9443",
+      "locality": "Widnau",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE359365084",
+      "description": "Betrieb einer Tanzschule zur Erteilung von Tanz- und Bewegungsunterricht für Kinder, Jugendliche und Erwachsene. Durchführung von Kursen, Workshops, Trainings und Veranstaltungen im Bereich Tanz, Bewe"
+    },
+    {
+      "name": "CS Renovation Carlos",
+      "address": "Grand-Rue 35",
+      "npa": "2746",
+      "locality": "Crémines",
+      "canton": "BE",
+      "category": "batiment",
+      "uid": "CHE470736404",
+      "description": "Peinture. Couverture. Charpente. Carrelage. Maçonnerie. Isolation."
+    },
+    {
+      "name": "Cyfend GmbH",
+      "address": "Bodenackerstrasse 46",
+      "npa": "8112",
+      "locality": "Otelfingen",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE263561819",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Fachdienstleistungen und Schulungen im Bereich der Informationstechnologie, insbesondere in den Gebieten Cloud Computing, Informationssicherheit, Cybersich"
+    },
+    {
+      "name": "DAUZET FOOD INNOVATION",
+      "address": "Route de Pra 8",
+      "npa": "1993",
+      "locality": "Veysonnaz",
+      "canton": "VS",
+      "category": "restaurant",
+      "uid": "CHE432639898",
+      "description": "Importation, exportation, développement et commercialisation de produits alimentaires naturels et innovants, notamment de fruits à effet sucrant et de solutions nutritionnelles alternatives au sucre."
+    },
+    {
+      "name": "De-toxic Coaching GmbH",
+      "address": "Zumikerstrasse 4",
+      "npa": "8700",
+      "locality": "Küsnacht (ZH)",
+      "canton": "ZH",
+      "category": "autre",
+      "uid": "CHE378195977",
+      "description": "Die Gesellschaft bezweckt die Entwicklung, Organisation und Durchführung von Coaching-, Trainings- und Weiterbildungsangeboten im Bereich der persönlichen und beruflichen Entwicklung. Der Schwerpunkt"
+    },
+    {
+      "name": "Didier Pichonnaz dP der Projektentwickler",
+      "address": "Langmattacker 7",
+      "npa": "5015",
+      "locality": "Erlinsbach (SO)",
+      "canton": "SO",
+      "category": "restaurant",
+      "uid": "CHE325277594",
+      "description": "Strategische Planung, Entwicklung und Beratung von Immobilien und Immobilienprojekten, Erstellung von Potenzialanalysen, Machbarkeitsstudien, Nutzungs- und Investitionsstrategien, Richt- und Vorprojek"
+    },
+    {
+      "name": "Die Sattelfitterin, Livia Jungo",
+      "address": "Rebachergässli 1",
+      "npa": "7203",
+      "locality": "Trimmis",
+      "canton": "GR",
+      "category": "autre",
+      "uid": "CHE182665956",
+      "description": "Dienstleistungen im Bereich Sattelanpassung, Sattelberatung, Verkauf von Pferdesätteln und weiterem Reitsportzubehör."
+    },
+    {
+      "name": "Dingo Investments AG",
+      "address": "Bahnhofstrasse 10",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "autre",
+      "uid": "CHE411605652",
+      "description": "Die Gesellschaft bezweckt den Erwerb, das Halten, die Verwaltung, die Vermietung, die Verpachtung, die Entwicklung sowie die Veräusserung von Immobilien und Liegenschaften aller Art im In- und Ausland"
+    },
+    {
+      "name": "Domaine CHAPPAZ SA",
+      "address": "Chemin de Liaudise 39",
+      "npa": "1926",
+      "locality": "Fully",
+      "canton": "VS",
+      "category": "industrie",
+      "uid": "CHE178440041",
+      "description": "La société a pour but l'exploitation de terres agricoles et production de vendanges, de même que toutes activités dans le domaine viticole et vinicole. La société pourra effectuer soit pour son propre"
+    },
+    {
+      "name": "duolopment GmbH",
+      "address": "Im Winkel 3",
+      "npa": "4565",
+      "locality": "Recherswil",
+      "canton": "SO",
+      "category": "informatique",
+      "uid": "CHE495705905",
+      "description": "Entwicklung, Be- und Vertrieb von Webdienstleistungen inkl. Online-Shops, Herstellung und/oder Verkauf physischer Güter im Rahmen dieser Dienstleistungen. Kann im In- und Ausland Zweigniederlassungen"
+    },
+    {
+      "name": "EBV Wintergarten Systeme Sarikamis",
+      "address": "Römerstrasse 3",
+      "npa": "4153",
+      "locality": "Reinach (BL)",
+      "canton": "BL",
+      "category": "autre",
+      "uid": "CHE173808441",
+      "description": "Montage und Handel von Glassystemen, Wintergärten, Markisen, Überdachungen, Storen, Pergolen und Fenstern."
+    },
+    {
+      "name": "ECU Umwelttechnologie AG",
+      "address": "Poststrasse 24",
+      "npa": "6302",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "restaurant",
+      "uid": "CHE313113342",
+      "description": "Die Gesellschaft bezweckt die Vermittlung und Entwicklung von Projekten im Bereich der erneuerbaren Energien sowie die Verwaltung des eigenen Vermögens. Die Gesellschaft kann im In- und Ausland Zweign"
+    },
+    {
+      "name": "EMMAX Dienstleistungs GmbH",
+      "address": "Waldeckstrasse 5",
+      "npa": "4053",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "services",
+      "uid": "CHE408835921",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen spezialisierte Reinigung, Marketing und Medienproduktion sowie Vertriebsberatung und Unternehmensberatung. Die Gesellscha"
+    },
+    {
+      "name": "Firnholz GmbH",
+      "address": "Neuböden 441",
+      "npa": "3156",
+      "locality": "Guggisberg",
+      "canton": "BE",
+      "category": "autre",
+      "uid": "CHE300831511",
+      "description": "Die Gesellschaft bezweckt den Betrieb einer Zimmerei und Schreinerei sowie die Ausführung aller damit zusammenhängenden Arbeiten. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen und Toch"
+    },
+    {
+      "name": "Freidinger InSAR Imaging",
+      "address": "Soligänterstrasse 39",
+      "npa": "8180",
+      "locality": "Bülach",
+      "canton": "ZH",
+      "category": "autre",
+      "uid": "CHE246789528",
+      "description": "Führung eines Bildbearbeitungs- und Beratungsunternehmens im Bereich der Verarbeitung und Auswertung von Radarsatellitendaten zur Analyse von Bodenbewegungen und Bodenverformungen sowie deren Interpre"
+    },
+    {
+      "name": "Fuchs Füchslin AG",
+      "address": "Schwanenstrasse 38",
+      "npa": "8840",
+      "locality": "Einsiedeln",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE201005627",
+      "description": "Die Gesellschaft bezweckt das Erbringen von sämtlichen Dienstleistungen im Baugewerbe, insbesondere den Betrieb einer General- und Totalbauunternehmung, die Planung und Erstellung von Bauwerken aller"
+    },
+    {
+      "name": "G1 AG",
+      "address": "Kantonsstrasse 21c",
+      "npa": "6207",
+      "locality": "Nottwil",
+      "canton": "LU",
+      "category": "batiment",
+      "uid": "CHE357840571",
+      "description": "Die Gesellschaft bezweckt den Erwerb, die Bewirtschaftung, die Vermietung und den Verkauf von Grundstücken und Immobilien sowie die Ausführung von Bau-, Renovations- und Umbauarbeiten. Sie kann Fahrze"
+    },
+    {
+      "name": "Garage De Luigi GmbH",
+      "address": "Eigi 3",
+      "npa": "8932",
+      "locality": "Mettmenstetten",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE408396057",
+      "description": "Die Gesellschaft bezweckt den Betrieb einer Autogarage, insbesondere die Reparatur, Wartung und Service von Motorfahrzeugen aller Art sowie der Handel mit Fahrzeugen und Fahrzeugteilen. Die Gesellscha"
+    },
+    {
+      "name": "Garage Wetzel GmbH",
+      "address": "Bahnhofstrasse 3",
+      "npa": "4147",
+      "locality": "Aesch (BL)",
+      "canton": "BL",
+      "category": "commerce",
+      "uid": "CHE186872684",
+      "description": "Die Gesellschaft bezweckt den Betrieb einer Garage für Fahrzeuge aller Art. Sie kann Handel inklusive Import und Export mit Fahrzeugen aller Art betreiben. Die Gesellschaft kann alle Geschäfte durchfü"
+    },
+    {
+      "name": "Georgiu GB Umzugsreinigung",
+      "address": "Im Eigen 12",
+      "npa": "5080",
+      "locality": "Laufenburg",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE154031025",
+      "description": "Umzugsreinigung und Endreinigung."
+    },
+    {
+      "name": "GK Pro plâtrerie et peinture, Gravante Kevin",
+      "address": "Avenue des Platanes 17c",
+      "npa": "3960",
+      "locality": "Sierre",
+      "canton": "VS",
+      "category": "batiment",
+      "uid": "CHE155726733",
+      "description": "Exploitation d'une entreprise de peinture et plâtrerie"
+    },
+    {
+      "name": "GMP di Michele Germano",
+      "address": "Vicolo alla Cava 2b",
+      "npa": "6512",
+      "locality": "Bellinzona",
+      "canton": "TI",
+      "category": "autre",
+      "uid": "CHE315884657",
+      "description": "Posa piastrelle e parket. Lavori in cartongesso e impresa di pittura."
+    },
+    {
+      "name": "Gönnerverein Spitex March",
+      "address": "Bahnhofplatz 10",
+      "npa": "8853",
+      "locality": "Lachen",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE335719487",
+      "description": "Der Verein verfolgt keine kommerziellen Zwecke und erstrebt keinen Gewinn. Der Verein unterstützt die Zielsetzungen der Spitex March AG, die nicht durch den Leistungsauftrag der Gemeinden finanziert w"
+    },
+    {
+      "name": "Goujon NEXT",
+      "address": "Im Tobelacker 10",
+      "npa": "8044",
+      "locality": "Dübendorf",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE469652491",
+      "description": "Erbringung von Dienstleistungen im Bereich Strategie und Marketing für Unternehmen und Organisationen, insbesondere in Business Development, Markenführung und operativer Unterstützung. Zudem Erbringun"
+    },
+    {
+      "name": "Groove and Sound GmbH",
+      "address": "Bolleystrasse 22",
+      "npa": "8006",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "beaute",
+      "uid": "CHE386498003",
+      "description": "Die Gesellschaft bezweckt den Betrieb einer Online-Akademie für Musik, insbesondere für klassische spanische Gitarren und verwandte Instrumente, sowie die Erbringung von Unterrichts-, Coaching- und Be"
+    },
+    {
+      "name": "HELVARIS GmbH",
+      "address": "Brünigstrasse 164",
+      "npa": "6060",
+      "locality": "Sarnen",
+      "canton": "AR",
+      "category": "autre",
+      "uid": "CHE346796782",
+      "description": "Die Gesellschaft bezweckt den Handel mit Markenartikeln und Güter aller Art. Die Gesellschaft kann alle Geschäfte eingehen und Verträge abschliessen, die geeignet sind, den Zweck der Gesellschaft zu f"
+    },
+    {
+      "name": "Helvetic Bridge Sagl",
+      "address": "Via Molinazzo 4",
+      "npa": "6900",
+      "locality": "Lugano",
+      "canton": "TI",
+      "category": "industrie",
+      "uid": "CHE420468791",
+      "description": "La società ha per scopo, in Svizzera e all'estero: La prestazione di servizi di consulenza strategica, commerciale e industriale a favore di imprese e investitori, inclusa l'attività di business devel"
+    },
+    {
+      "name": "Hispano Swiss Consulting Graña de la Torre",
+      "address": "Ziegelrain 8",
+      "npa": "5000",
+      "locality": "Aarau",
+      "canton": "AG",
+      "category": "beaute",
+      "uid": "CHE356050365",
+      "description": "Beratung und administrative Unterstützung für Privatpersonen und Unternehmen, insbesondere bei Behördengängen, Firmengründungen, Buchhaltung, Steuererklärungen, Übersetzungen, Begleitungen, Versicheru"
+    },
+    {
+      "name": "iBuild Generalunternehmung AG",
+      "address": "St. Gallerstrasse 18",
+      "npa": "8853",
+      "locality": "Lachen",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE358630326",
+      "description": "Die Gesellschaft bezweckt die Übernahme und Ausführung von Bau-, Planungs- und Baumanagementarbeiten jeder Art sowie die Vermittlung, Verwaltung, Bewertung und Bewirtschaftung von Immobilien. Die Gese"
+    },
+    {
+      "name": "Isa Bauspenglerei-Bedachungen GmbH",
+      "address": "Amperdellweg 5",
+      "npa": "7320",
+      "locality": "Sargans",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE203143370",
+      "description": "Die Gesellschaft bezweckt die Ausführung von Bauspenglerarbeiten, Bedachungen, Fassadenbau sowie Arbeiten an Gebäudehüllen. Sie erbringt Dienstleistungen in den Bereichen Steil- und Flachdächer, Abdic"
+    },
+    {
+      "name": "Ischla Scrl",
+      "address": "Sclamischot 178",
+      "npa": "7558",
+      "locality": "Valsot",
+      "canton": "GR",
+      "category": "informatique",
+      "uid": "CHE231056813",
+      "description": "Die Gesellschaft bezweckt den Erwerb, das Halten, die Verwaltung und die Veräusserung von Beteiligungen an in- und ausländischen Unternehmen, insbesondere im Bereich Technologie, Energie und Infrastru"
+    },
+    {
+      "name": "KAMI PROFIT HOLDING SWISS AG",
+      "address": "Langensandhöhe 12",
+      "npa": "6005",
+      "locality": "Horw",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE184565202",
+      "description": "Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an in- und ausländischen Unternehmen sowie deren strategische Führung. Die Gesellschaft kann Zweigniederlass"
+    },
+    {
+      "name": "King of Stats, Marinkovic",
+      "address": "Rheinstrasse 8",
+      "npa": "9443",
+      "locality": "Widnau",
+      "canton": "SG",
+      "category": "informatique",
+      "uid": "CHE470130472",
+      "description": "Entwicklung, Betrieb und Vertrieb von Software und digitalen Anwendungen Bereich Sportdatenanalyse, insbesondere zur Erfassung, Verarbeitung und Auswertung von Spiel- und Leistungsstatistiken, sowie E"
+    },
+    {
+      "name": "KITAV Vuong",
+      "address": "Allmendstrasse 3b",
+      "npa": "6048",
+      "locality": "Horw",
+      "canton": "LU",
+      "category": "informatique",
+      "uid": "CHE337875632",
+      "description": "Entwicklung, Betrieb und Vertrieb von Software, Applikationen und digitalen Produkten sowie Erbringung damit zusammenhängender Dienstleistungen im Bereich Informatik."
+    },
+    {
+      "name": "Kola Group GmbH",
+      "address": "Schützengasse 6a",
+      "npa": "8320",
+      "locality": "Fehraltorf",
+      "canton": "ZH",
+      "category": "restaurant",
+      "uid": "CHE158885670",
+      "description": "Die Gesellschaft bezweckt den Betrieb von Gastronomiebetrieben, insbesondere von Restaurants, Takeaway-Betrieben sowie Verkaufsständen an Festivals, Märkten und Veranstaltungen. Die Gesellschaft bezwe"
+    },
+    {
+      "name": "Koshel Dance & Entertainment",
+      "address": "Bahnhofstrasse 16",
+      "npa": "6037",
+      "locality": "Root",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE411753927",
+      "description": "Angebot von Tanzshows und künstlerischen Darbietungen für Events, Festivals, Firmenanlässe und private Veranstaltungen sowie Durchführung von Tanzunterricht."
+    },
+    {
+      "name": "Kura Sagl",
+      "address": "Piazza Dante Alighieri 8",
+      "npa": "6900",
+      "locality": "Lugano",
+      "canton": "TI",
+      "category": "services",
+      "uid": "CHE177337469",
+      "description": "L'acquisto, la vendita, la permuta, la progettazione, la costruzione, la ristrutturazione di beni immobili, la promozione e gestione di attività immobiliari, l'amministrazione, la gestione e la locazi"
+    },
+    {
+      "name": "LabVentures GmbH",
+      "address": "Dufourstrasse 43",
+      "npa": "9000",
+      "locality": "St. Gallen",
+      "canton": "SG",
+      "category": "autre",
+      "uid": "CHE191069670",
+      "description": "Die Gesellschaft bezweckt die Identifikation und Lösung von unternehmerischen und gesellschaftlichen Problemstellungen sowie die Entwicklung, Umsetzung und Vermarktung entsprechender Lösungen im Sinne"
+    },
+    {
+      "name": "L.A.D.S. - Loup Additive Design Solutions",
+      "address": "Laupenstrasse 1",
+      "npa": "3176",
+      "locality": "Neuenegg",
+      "canton": "BE",
+      "category": "informatique",
+      "uid": "CHE335434381",
+      "description": "Handel und Verkauf von Produkten und Prototypen, insbesondere solchen, die mit additiven Fertigungstechnologien hergestellt werden sowie Beratung und Unterstützung im Design- und Entwicklungsprozess u"
+    },
+    {
+      "name": "Lashes by shayen gonçalves",
+      "address": "Gustav Zeiler-Ring 2",
+      "npa": "5600",
+      "locality": "Lenzburg",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE197819932",
+      "description": "Erbringung von Beauty-Dienstleistungen, insbesondere Wimpernstyling und Make-up-Artistik."
+    },
+    {
+      "name": "LH MCD ZH GmbH",
+      "address": "Bundesplatz 14",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "restaurant",
+      "uid": "CHE450933574",
+      "description": "Die Gesellschaft bezweckt den Erwerb, die Verwaltung sowie die direkte oder indirekte Bewirtschaftung von McDonald's Restaurants sowie alle damit zusammenhängenden Tätigkeiten. Die Gesellschaft kann Z"
+    },
+    {
+      "name": "Likely Otter Ventures AG",
+      "address": "Zürcherstrasse 84a",
+      "npa": "8852",
+      "locality": "Altendorf",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE487324642",
+      "description": "Die Gesellschaft bezweckt den Kauf, Verkauf und die Verwaltung von Beteiligungen aller Art an in- und ausländischen Unternehmen sowie die Erbringung damit zusammenhängender Koordinations-, Finanzierun"
+    },
+    {
+      "name": "LIQOVA Kollektivgesellschaft",
+      "address": "Bahnweg 10",
+      "npa": "8862",
+      "locality": "Schübelbach",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE311001985",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Bereich Financial Recovery sowie die Durchführung von Finanz- und Datenanalysen zur Identifikation finanzieller Potenziale, zur Optimie"
+    },
+    {
+      "name": "Lutolli Unterlagsböden GmbH",
+      "address": "Rebbergstrasse 61",
+      "npa": "4632",
+      "locality": "Trimbach",
+      "canton": "SO",
+      "category": "autre",
+      "uid": "CHE495902943",
+      "description": "Erbringung von Arbeiten und Installationen in den Bereichen Unterlagsböden, Isolationen, Hartbetonbelägen und Fliessestrich. Kann Zweigniederlassungen in der Schweiz und im Ausland errichten, sich an"
+    },
+    {
+      "name": "Maestro Agency, Inh. Maurer",
+      "address": "Unterdorfstrasse 4c",
+      "npa": "8117",
+      "locality": "Fällanden",
+      "canton": "ZH",
+      "category": "informatique",
+      "uid": "CHE390461032",
+      "description": "Erbringung von Dienstleistungen in den Bereichen Webentwicklung, Softwareentwicklung, digitales Design, KI-Integration, IT-Infrastruktur sowie Beratung und Umsetzung digitaler Projekte für Unternehmen"
+    },
+    {
+      "name": "Magnifik Services, Marques Ferreira",
+      "address": "Wydäckerring 40",
+      "npa": "8047",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE237128196",
+      "description": "Die Firma bezweckt die Erbringung von Dienstleistungen in den Bereichen Reinigung aller Art, Hauswartung, Gartenpflege sowie Unterhalts- und Pflegearbeiten von Liegenschaften."
+    },
+    {
+      "name": "Marie-Thérèse CHAPPAZ SA",
+      "address": "Chemin de Liaudise 39",
+      "npa": "1926",
+      "locality": "Fully",
+      "canton": "VS",
+      "category": "commerce",
+      "uid": "CHE274585250",
+      "description": "La société a pour but la commercialisation de vin et de produits vinicoles, y compris les travaux d'oenologie, la vinification, la mise en bouteilles, l'exportation, la promotion de tels produits et t"
+    },
+    {
+      "name": "Markus Spillmann Unternehmensberatung GmbH",
+      "address": "Oberalpstrasse 78",
+      "npa": "4054",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "autre",
+      "uid": "CHE254107321",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungs- und Coachingdienstleistungen, insbesondere im Bereich Unternehmensberatung, sowie entsprechende Schulungen. Im Weiteren bezweckt die Gesellschaf"
+    },
+    {
+      "name": "marsch GmbH",
+      "address": "Dorfstrasse 2",
+      "npa": "6375",
+      "locality": "Beckenried",
+      "canton": "NW",
+      "category": "autre",
+      "uid": "CHE434701031",
+      "description": "Die Gesellschaft bezweckt den Betrieb einer SAC-Berghütte des Schweizer Alpen-Club mit Beherbergung von Übernachtungsgästen sowie Führung eines Gastronomiebetriebes für Tages- und Übernachtungsgäste."
+    },
+    {
+      "name": "MC Toxicology Consulting GmbH",
+      "address": "Husenstrasse 11",
+      "npa": "6354",
+      "locality": "Vitznau",
+      "canton": "LU",
+      "category": "services",
+      "uid": "CHE207995082",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Bereich Toxikologie und Regulatory Affairs, insbesondere die strategische und operative Beratung von Pharma-Firmen und Biotech-Unterneh"
+    },
+    {
+      "name": "MGWARD GmbH",
+      "address": "Rychenbergstrasse 237",
+      "npa": "8404",
+      "locality": "Winterthur",
+      "canton": "ZH",
+      "category": "autre",
+      "uid": "CHE296675565",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Zusammenhang mit der Verwaltung, Vermietung, Vermittlung, dem Betrieb, der Instandhaltung und dem Unterhalt von Immobilien. Weiter bezw"
+    },
+    {
+      "name": "MMT Group GmbH",
+      "address": "Lindenstrasse 3",
+      "npa": "8153",
+      "locality": "Rümlang",
+      "canton": "ZH",
+      "category": "restaurant",
+      "uid": "CHE317419716",
+      "description": "Die Gesellschaft bezweckt den Betrieb von Gastronomie-, Restaurant-, Catering- und Eventunternehmen sowie die Organisation und Durchführung von Veranstaltungen. Sie erbringt Beratungsdienstleistungen,"
+    },
+    {
+      "name": "MOOV GmbH",
+      "address": "Ofenacherweg 2",
+      "npa": "2544",
+      "locality": "Bettlach",
+      "canton": "SO",
+      "category": "autre",
+      "uid": "CHE306902411",
+      "description": "Erbringung von Dienstleistungen im Bereich Fitness, insbesondere Durchführung von Pilates-Unterricht in Form von Personal Training, Gruppenkursen sowie Workshops. Kann Zweigniederlassungen und Tochter"
+    },
+    {
+      "name": "movento-entwicklungen gmbh",
+      "address": "Rufacherstrasse 34",
+      "npa": "4055",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "autre",
+      "uid": "CHE311643706",
+      "description": "Die Gesellschaft bezweckt Beratungen sowie das Erbringen von Dienstleistungen in den Bereichen Energiearbeit, Körperarbeit, Schulungen, Coaching und Entwicklungsunterstützung. Im Weiteren bezweckt die"
+    },
+    {
+      "name": "MP Casa AG",
+      "address": "Schutzengelstrasse 44",
+      "npa": "6340",
+      "locality": "Baar",
+      "canton": "ZG",
+      "category": "autre",
+      "uid": "CHE139584535",
+      "description": "Die Gesellschaft bezweckt das Erstellen-, Kauf- und Verkauf von Liegenschaften. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Un"
+    },
+    {
+      "name": "MSG GmbH",
+      "address": "Spalenvorstadt 35a",
+      "npa": "4051",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "restaurant",
+      "uid": "CHE415274324",
+      "description": "Die Gesellschaft bezweckt den Betrieb von Gastronomie-, Restaurations-, Hospitality- und Beherbergungsstätten sowie die Erbringung sämtlicher damit zusammenhängender Dienstleistungen. Weiter bezweckt"
+    },
+    {
+      "name": "MZ Elektro GmbH",
+      "address": "Hauptstrasse 48",
+      "npa": "2553",
+      "locality": "Safnern",
+      "canton": "BE",
+      "category": "autre",
+      "uid": "CHE362696512",
+      "description": "Die Gesellschaft bezweckt Planung, Installation, Wartung und Reparatur von elektrischen Anlagen sowie Handel mit Waren aller Art. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften i"
+    },
+    {
+      "name": "N4 Swiss AG",
+      "address": "Neuhofstrasse 24",
+      "npa": "6340",
+      "locality": "Baar",
+      "canton": "ZG",
+      "category": "informatique",
+      "uid": "CHE286185710",
+      "description": "Gegenstand des Unternehmens ist die IT-Prozessberatung, die Entwicklung und der Vertrieb von Software sowie die Erbringung von Dienstleistungen im Bereich Konstruktion und Entwicklung. Ferner der Erwe"
+    },
+    {
+      "name": "Nimms Patschifig",
+      "address": "Beverinstrasse 10",
+      "npa": "7430",
+      "locality": "Thusis",
+      "canton": "GR",
+      "category": "restaurant",
+      "uid": "CHE228736089",
+      "description": "Der Zweck des Vereins «Nimms Patschifig» ist ein Begegnungscafé zu betreiben, welches den zwischenmenschlichen Austausch fördert und damit auch der Vereinsamung entgegenwirken soll. Dieser Treffpunkt"
+    },
+    {
+      "name": "Noventis Swiss GmbH",
+      "address": "Palmisacker 11",
+      "npa": "8824",
+      "locality": "Wädenswil",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE366449556",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Bereich Garten- und Bauarbeiten sowie Umbauten und diverse Serviceleistungen. Die Gesellschaft kann Zweigniederlassungen und Tochterges"
+    },
+    {
+      "name": "OGF Capital AG",
+      "address": "Baarerstrasse 71",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "autre",
+      "uid": "CHE354327053",
+      "description": "Der Zweck der Gesellschaft ist die Verwaltung von Familienvermögen und -aktiva, insbesondere der Erwerb, das Halten, die Finanzierung und die Verwaltung von Vermögenswerten und Investitionen jeglicher"
+    },
+    {
+      "name": "Ovation Services & Publishing GmbH",
+      "address": "Neuwiesenstrasse 45",
+      "npa": "8400",
+      "locality": "Winterthur",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE453814061",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungsdienstleistungen, einschliesslich spezialisierter Schulungen für Hochschuleinrichtungen und Personen, die im Hochschulbereich tätig sind. Das Unte"
+    },
+    {
+      "name": "Pamau AG",
+      "address": "Juraweidstrasse 22",
+      "npa": "5023",
+      "locality": "Biberstein",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE173346920",
+      "description": "Die Gesellschaft bezweckt den Erwerb und die Verwaltung von Liegenschaften. Die Gesellschaft kann weiter Dienstleistungen aller Art für den Betrieb eines Treuhandunternehmens (Einrichten, Führen und A"
+    },
+    {
+      "name": "Peak Revenue Operations AG",
+      "address": "Bürgenstock 3",
+      "npa": "6363",
+      "locality": "Ennetbürgen",
+      "canton": "NW",
+      "category": "autre",
+      "uid": "CHE493856255",
+      "description": "Die Gesellschaft bezweckt die Unternehmensberatung und damit zusammenhängende Dienstleistungen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und si"
+    },
+    {
+      "name": "PEPPINO Solothurn Nita",
+      "address": "Dornacherstrasse 54",
+      "npa": "4500",
+      "locality": "Solothurn",
+      "canton": "SO",
+      "category": "restaurant",
+      "uid": "CHE362046886",
+      "description": "Betrieb von Restaurants sowie Handel mit Lebensmitteln und alkoholischen und nicht alkoholischen Getränken."
+    },
+    {
+      "name": "Pfotenpflege Flükiger",
+      "address": "Breitenstrasse 274",
+      "npa": "4618",
+      "locality": "Boningen",
+      "canton": "SO",
+      "category": "beaute",
+      "uid": "CHE332503241",
+      "description": "Hundesalon sowie allgemeine Dienstleistungen rund um den Hund, insbesondere Hundeschule, Spazier- und Betreuungsdienstleistungen."
+    },
+    {
+      "name": "Philantrox S. Polyakov",
+      "address": "Hauptstrasse 56",
+      "npa": "6034",
+      "locality": "Inwil",
+      "canton": "LU",
+      "category": "informatique",
+      "uid": "CHE209387255",
+      "description": "Entwicklung, Analyse und Umsetzung von sozioökonomischen, technologischen und strategischen Konzepten sowie digitalen Lösungen und Plattformen. Erbringung von Beratungs- und Dienstleistungen gegen Ent"
+    },
+    {
+      "name": "Philomena Colatrella Advisory GmbH",
+      "address": "Felsbergstrasse 7",
+      "npa": "6006",
+      "locality": "Luzern",
+      "canton": "LU",
+      "category": "beaute",
+      "uid": "CHE307091531",
+      "description": "Die Gesellschaft bezweckt die Begleitung von Unternehmen, Institutionen, Verbänden, Behörden und Führungspersönlichkeiten bei komplexen Transformationen an der Schnittstelle von Strategie, Governance,"
+    },
+    {
+      "name": "Pribeanu Swiss Services DCP",
+      "address": "Bachmattstrasse 46",
+      "npa": "8048",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE275911754",
+      "description": "Dienstleistungen im Bereich IT, Vermittlung von Verkäufer sowie digitale Dienstleitungen und IT bezogene Aktivitäten. Taxi- und Limousinenservice; Personenbeförderung; Fahrzeugvermietung; Kunstvermitt"
+    },
+    {
+      "name": "Prime Groupe Logarajah",
+      "address": "Aarauerstrasse 6",
+      "npa": "5116",
+      "locality": "Brugg",
+      "canton": "AG",
+      "category": "services",
+      "uid": "CHE386552766",
+      "description": "Erbringung von Dienstleistungen im Bereich Gebäudereinigung und Facility Services, insbesondere Reinraum-, Lüftungs- und Gastronomiereinigung, Hauswartung, Entsorgung sowie Grünflächenunterhalt. Erbri"
+    },
+    {
+      "name": "Prosema AG",
+      "address": "Bodenackerstrasse 7",
+      "npa": "5014",
+      "locality": "Gretzenbach",
+      "canton": "SO",
+      "category": "commerce",
+      "uid": "CHE248128042",
+      "description": "Handel, Vertrieb, Import, Export sowie Entwicklung von Produkten, Systemlösungen und Dienstleistungen für das Baugewerbe, das Ausbaugewerbe, das Handwerk und die Industrie, erbringt zudem Beratungs-,"
+    },
+    {
+      "name": "Pure Ju Sàrl",
+      "address": "Rue des Places 38",
+      "npa": "2855",
+      "locality": "Haute-Sorne",
+      "canton": "JU",
+      "category": "restaurant",
+      "uid": "CHE312823665",
+      "description": "Exploitation de restaurants, bars et tous autres établissements publics, service de traiteur, restauration à l'emporter, développement, production, commercialisation de tous produits alimentaires, ain"
+    },
+    {
+      "name": "Reacsoft GmbH",
+      "address": "Hardturmstrasse 161",
+      "npa": "8005",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "informatique",
+      "uid": "CHE258457263",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen, insbesondere Beratungs- und Supportleistungen in den Bereichen Unternehmensberatung, Informatik, Software, Human Resources, Management un"
+    },
+    {
+      "name": "RELE GmbH",
+      "address": "Sinserstrasse 67",
+      "npa": "6330",
+      "locality": "Cham",
+      "canton": "ZG",
+      "category": "autre",
+      "uid": "CHE418795795"
+    },
+    {
+      "name": "Rimer H&Werk GmbH",
+      "address": "Dorfstrasse 14",
+      "npa": "6280",
+      "locality": "Hochdorf",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE193260084",
+      "description": "Die Gesellschaft bezweckt die Erbringung von handwerklichen Dienstleistungen aller Art, insbesondere im Bereich Photovoltaik, Innenausbau, Reparaturen sowie Umbauten. Die Gesellschaft kann Zweignieder"
+    },
+    {
+      "name": "Rutishauser Hernández Ortega Consulting",
+      "address": "Bergstrasse 8",
+      "npa": "8810",
+      "locality": "Horgen",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE400089479",
+      "description": "Erbringung von Beratungsdienstleistungen für Unternehmen, insbesondere in den Bereichen Risikomanagement, Regulierung und Versicherungen."
+    },
+    {
+      "name": "Sabai Thai Massage SPA Graf",
+      "address": "Ziegelhüttenweg 4",
+      "npa": "8604",
+      "locality": "Volketswil",
+      "canton": "ZH",
+      "category": "sante",
+      "uid": "CHE305518961",
+      "description": "Die Einzelfirma bezweckt die Erbringung von Dienstleistungen in den Bereichen Gesundheit, Wellness, Therapie, Prävention und Gastronomie sowie den Handel mit Waren aller Art, insbesondere Kosmetik-, S"
+    },
+    {
+      "name": "Salumée Sagl",
+      "address": "Alla Stazione 3",
+      "npa": "6702",
+      "locality": "Bellinzona",
+      "canton": "TI",
+      "category": "services",
+      "uid": "CHE378266413",
+      "description": "Lo scopo della società è la gestione di una salumeria, macelleria e paninoteca; il commercio di beni alimentari, fra cui formaggi, bibite alcoliche e analcoliche, panini e prodotti affini. La società"
+    },
+    {
+      "name": "Samuel Wurst - Plattenbeläge & Umbauten GmbH",
+      "address": "Im Heimeli 2",
+      "npa": "8867",
+      "locality": "Glarus Nord",
+      "canton": "GL",
+      "category": "autre",
+      "uid": "CHE343507177",
+      "description": "Die Gesellschaft bezweckt den Betrieb eines Bau-, Umbau-, Hafner- und Plattenlegerunternehmens sowie die Erbringung von Bauberatungs- und Planungsdienstleistungen. Sie führt insbesondere Arbeiten in d"
+    },
+    {
+      "name": "Sassalos Creative Consulting and Production",
+      "address": "Sentiero di Gandria 6",
+      "npa": "6976",
+      "locality": "Lugano",
+      "canton": "TI",
+      "category": "services",
+      "uid": "CHE299764975",
+      "description": "Servizi di direzione creativa, strategia di marca, branding, sviluppo dell'identità visiva, progettazione grafica, comunicazione visiva, art direction, web design, fotografia, produzione di contenuti"
+    },
+    {
+      "name": "Schaffhauser, ukuhamba - Bike und mehr - gemeinsam unterwegs",
+      "address": "Alte Gasse 1",
+      "npa": "7247",
+      "locality": "Klosters",
+      "canton": "GR",
+      "category": "informatique",
+      "uid": "CHE395854580",
+      "description": "Durchführung von Fahrtechnikkursen und Touren für Mountainbike, Weiterbildungskurse für Tourguides, Lehrgangskurse für Zertifizierungen zum Swiss Mountainbike Guide, Wandern und Trekking"
+    },
+    {
+      "name": "S & D Management GmbH",
+      "address": "Oberdorf 28",
+      "npa": "8222",
+      "locality": "Beringen",
+      "canton": "SH",
+      "category": "autre",
+      "uid": "CHE462245400",
+      "description": "Die Gesellschaft bezweckt den Erwerb, den Verkauf, die Überbauung und die Verwaltung von Immobilien im In- und Ausland. Die Erbringung von Dienstleistungen und Beratungen sowie Vermittlungen aller Art"
+    },
+    {
+      "name": "Seguidores do Caminho",
+      "address": "Typographengässli 4",
+      "npa": "2502",
+      "locality": "Biel/Bienne",
+      "canton": "BE",
+      "category": "autre",
+      "uid": "CHE444381212",
+      "description": "Der Verein Seguidores do Caminho fördert Jesus Christus als nachahmenswertes Vorbild unter portugiesischen Muttersprachlern und anderen. Dadurch stärken Sie Wohltätigkeit und Geselligkeit, setzen sich"
+    },
+    {
+      "name": "Sky-Consulting Corsetti und Schröter KLG",
+      "address": "Wolserstrasse 28",
+      "npa": "8912",
+      "locality": "Obfelden",
+      "canton": "ZH",
+      "category": "services",
+      "uid": "CHE365030798",
+      "description": "Erbringung von Dienstleistungen und Beratungen in den Bereichen Remarketing, Hosting, Client und Server Support, Wartungs- und Ausbauverträgen, Telefon-, Netzwerk- und Internetinstallationen, Firewall"
+    },
+    {
+      "name": "SmartResQ GmbH, Denkendorf, Zweigniederlassung Schwerzenbach",
+      "address": "Greifenseestrasse 44",
+      "npa": "8603",
+      "locality": "Schwerzenbach",
+      "canton": "ZH",
+      "category": "autre",
+      "uid": "CHE177232391",
+      "description": "g EUR 25'000.00.Angaben zur Zweigniederlassung: Zweck: Gegenstand des Unternehmens ist die Entwicklung, Herstellung, Betrieb und der Verkauf von Medizinprodukten.Die Gesellschaft darf alle Geschäfte v"
+    },
+    {
+      "name": "Snack-Corner Negash",
+      "address": "Ittigenstrasse 1",
+      "npa": "3063",
+      "locality": "Ittigen",
+      "canton": "BE",
+      "category": "restaurant",
+      "uid": "CHE207715710",
+      "description": "Betrieb von Snack Automaten."
+    },
+    {
+      "name": "Snowburger GmbH",
+      "address": "Kirchbergstrasse 237",
+      "npa": "3400",
+      "locality": "Burgdorf",
+      "canton": "BE",
+      "category": "restaurant",
+      "uid": "CHE478477548",
+      "description": "Die Gesellschaft bezweckt den Erwerb, die Verwaltung sowie die direkte oder indirekte Bewirtschaftung von Restaurants nach dem McDonald's System. Die Gesellschaft kann Zweigniederlassungen und Tochter"
+    },
+    {
+      "name": "Spray-Technik AG",
+      "address": "Maiengrüenistrasse 5",
+      "npa": "6206",
+      "locality": "Neuenkirch",
+      "canton": "LU",
+      "category": "informatique",
+      "uid": "CHE148956966",
+      "description": "Die Gesellschaft bezweckt die Herstellung von und Handel mit Farbspritzanlagen und deren Zubehör; Handel mit Waren aller Art. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In"
+    },
+    {
+      "name": "Stylenzio GmbH",
+      "address": "Schöngrund 36",
+      "npa": "6343",
+      "locality": "Risch",
+      "canton": "ZG",
+      "category": "informatique",
+      "uid": "CHE484366986",
+      "description": "Die Gesellschaft bezweckt die Entwicklung, den Betrieb und die Vermarktung digitaler Lösungen, Softwareprodukte, Online-Plattformen und mobilen Anwendungen, insbesondere in den Bereichen Stilberatung,"
+    },
+    {
+      "name": "Sublim'Dog, Allison Cabibbo",
+      "address": "Route de Courgenay 18",
+      "npa": "2942",
+      "locality": "Alle",
+      "canton": "JU",
+      "category": "autre",
+      "uid": "CHE493036134",
+      "description": "Exploitation d'un salon de toilettage canin."
+    },
+    {
+      "name": "SUM Global GmbH",
+      "address": "Churerstrasse 158",
+      "npa": "8808",
+      "locality": "Freienbach",
+      "canton": "SZ",
+      "category": "services",
+      "uid": "CHE161432300",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Technologie, Software, Datenanalyse, Informations- und Wissensvermittlung, Bildung, allgemeine Unternehmensberatung, Proj"
+    },
+    {
+      "name": "Swiss Beauty & Nail Studio GmbH",
+      "address": "Farbgasse 4",
+      "npa": "4800",
+      "locality": "Zofingen",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE465182233",
+      "description": "Die Gesellschaft bezweckt den Betrieb von Kosmetiksalons und Nagelstudios, die Erbringung von Schulungen im Kosmetikbereich, den Handel mit Waren aller Art, insbesondere im Bereich Kosmetik, sowie die"
+    },
+    {
+      "name": "Swiss Spirits GmbH",
+      "address": "Hürststrasse 94",
+      "npa": "8046",
+      "locality": "Zürich",
+      "canton": "ZH",
+      "category": "autre",
+      "uid": "CHE456575705",
+      "description": "Zweck der Gesellschaft umfasst die Entwicklung, Herstellung, Vermarktung und den Vertrieb von Spirituosen sowie den Aufbau und die Etablierung internationalen Marken im Bereich hochwertiger Spirituose"
+    },
+    {
+      "name": "Swiss Zerla GmbH",
+      "address": "Buchholzstrasse 45",
+      "npa": "3604",
+      "locality": "Thun",
+      "canton": "BE",
+      "category": "commerce",
+      "uid": "CHE264634510",
+      "description": "Die Gesellschaft bezweckt den Handel mit Waren aller Art, insbesondere mit Haushaltsgeräten und Produkten des täglichen Bedarfs, sowie den Betrieb und die Vermarktung von Online-Shops und E-Commerce-P"
+    },
+    {
+      "name": "Tesla Switzerland GmbH, Zweigniederlassung Buchs (AG)",
+      "address": "Edisonstrasse 1",
+      "npa": "5033",
+      "locality": "Buchs (AG)",
+      "canton": "AG",
+      "category": "autre",
+      "uid": "CHE133276561"
+    },
+    {
+      "name": "Tivaro AG",
+      "address": "Picassoplatz 4",
+      "npa": "4052",
+      "locality": "Basel",
+      "canton": "BS",
+      "category": "informatique",
+      "uid": "CHE490710141",
+      "description": "Die Gesellschaft bezweckt die Entwicklung, den Betrieb, die Vermarktung und die Lizenzierung von Software, digitalen Lösungen und Technologien sowie die Erbringung damit verbundener Dienstleistungen."
+    },
+    {
+      "name": "Trimobau GmbH",
+      "address": "Dorf 67b",
+      "npa": "3434",
+      "locality": "Landiswil",
+      "canton": "BE",
+      "category": "autre",
+      "uid": "CHE490175704",
+      "description": "Zweck der Gesellschaft ist die Übernahme und Ausführung von Planungs-, Projektierungs- und Baumanagementarbeiten aller Art als General- oder Totalunternehmerin sowie das Erbringen von damit zusammenhä"
+    },
+    {
+      "name": "T. T. Momo Thupten Choegyaltsang",
+      "address": "Hauptstrasse 71",
+      "npa": "9113",
+      "locality": "Degersheim",
+      "canton": "SG",
+      "category": "restaurant",
+      "uid": "CHE275414154",
+      "description": "Herstellung und Verkauf von Tibetischem Essen z. B. (Momo, Chowmein, Fried rice, Frühlingsrollen, Thenthuk, Shaphaley usw.). Verkauf mit Fahrzeug (Food Truck) an verschiedenen Orten, aktuell Degershei"
+    },
+    {
+      "name": "TZ Coaching GmbH",
+      "address": "Buobenhofstrasse 4",
+      "npa": "8852",
+      "locality": "Altendorf",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE348505470",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen im Sport-, Bildungs- und Trainingsbereich, insbesondere die Entwicklung, Organisation und Durchführung von Trainings, Kursen, Camps, Semin"
+    },
+    {
+      "name": "VALLI STUDIO & SERVIZI DI VALLI MAURO",
+      "address": "Via Industria 7",
+      "npa": "6826",
+      "locality": "Riva San Vitale",
+      "canton": "TI",
+      "category": "services",
+      "uid": "CHE167111567",
+      "description": "Manutenzioni industriali e non di macchinari, infrastrutture. Facility services. Montaggi meccanici, carpenteria e coperture. Project management e progettazione industriale di cicli produttivi. Tradin"
+    },
+    {
+      "name": "Van henden-Bernasconi Avocat",
+      "address": "Route de Crans 67",
+      "npa": "1978",
+      "locality": "Lens",
+      "canton": "VS",
+      "category": "services",
+      "uid": "CHE266016033",
+      "description": "Fourniture de prestations juridiques"
+    },
+    {
+      "name": "Vantigo Swiss Group KLG",
+      "address": "Poststrasse 4",
+      "npa": "6403",
+      "locality": "Küssnacht (SZ)",
+      "canton": "SZ",
+      "category": "informatique",
+      "uid": "CHE494211210",
+      "description": "Die Gesellschaft bezweckt IT-, KI- und Digitalisierungsdienstleistungen, Unternehmensberatung, Handel mit Waren aller Art, Entwicklung und Vermarktung digitaler Produkte und Dienstleistungen, Planung,"
+    },
+    {
+      "name": "Ventora Swiss GmbH",
+      "address": "Färberstrasse 10b",
+      "npa": "8832",
+      "locality": "Wollerau",
+      "canton": "SZ",
+      "category": "autre",
+      "uid": "CHE237650541",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen IT- und Unternehmensberatung, insbesondere SAP-Beratung, Enterprise- und Lösungsarchitektur, Projekt- und Programmmanagem"
+    },
+    {
+      "name": "Verbel S.A.",
+      "address": "Avenue Benjamin-Constant 7",
+      "npa": "1003",
+      "locality": "Lausanne",
+      "canton": "VD",
+      "category": "batiment",
+      "uid": "CHE100025118",
+      "description": "opérations immobilières; étude, organisation, planification et réalisation de travaux relatifs à l'activité d'une entreprise générale de construction; gestion, administration, gérance, analyse, expert"
+    },
+    {
+      "name": "VERKEHRS-ENGEL.CH ROLF PLANTA",
+      "address": "Schiltstrasse 36",
+      "npa": "8750",
+      "locality": "Glarus",
+      "canton": "GL",
+      "category": "autre",
+      "uid": "CHE457230568",
+      "description": "Dienstleistungen im Verkehrsdienst, Parkdienst, Ordnungsdienst."
+    },
+    {
+      "name": "V. Kumar GmbH",
+      "address": "Mättenmatt 10",
+      "npa": "4312",
+      "locality": "Magden",
+      "canton": "AG",
+      "category": "restaurant",
+      "uid": "CHE329649387",
+      "description": "Der Zweck der Gesellschaft ist das Führen von Restaurationsbetrieben, die Erbringung von Dienstleistungen im Gastronomiebereich, der Handel mit Lebensmitteln, Textilien und Waren aller Art sowie deren"
+    },
+    {
+      "name": "Voyager Studios Sàrl",
+      "address": "Chemin du Perray 34",
+      "npa": "1934",
+      "locality": "Val de Bagnes",
+      "canton": "VS",
+      "category": "services",
+      "uid": "CHE218723961",
+      "description": "La société a pour but l'organisation d'évènements, d'expériences et d'offres liées aux voyages, notamment sous la marque « Vintage Voyage », ainsi que le développement et l'exploitation de marques, pr"
+    },
+    {
+      "name": "Wassernase 24 AG",
+      "address": "Bruggfeldweg 10",
+      "npa": "4147",
+      "locality": "Aesch (BL)",
+      "canton": "BL",
+      "category": "autre",
+      "uid": "CHE132534571",
+      "description": "Die Gesellschaft bezweckt das Erbringen von Dienstleistungen im Bereich Ortung, Trocknung und Management von Wasserschäden. Die Gesellschaft kann alle Geschäfte eingehen und Verträge abschliessen, die"
+    },
+    {
+      "name": "Webyo - Luka Ivkovic",
+      "address": "Endlikerstrasse 94",
+      "npa": "8400",
+      "locality": "Winterthur",
+      "canton": "ZH",
+      "category": "commerce",
+      "uid": "CHE368667986",
+      "description": "Das Unternehmen bezweckt die Erbringung von Dienstleistungen in den Bereichen Webdesign, Entwicklung und Betrieb von E-Commerce-Lösungen, insbesondere von Shopify-Onlineshops. Dazu gehören insbesonder"
+    },
+    {
+      "name": "WIDLER Vermögensmanagement GmbH",
+      "address": "Leisibachstrasse 28",
+      "npa": "6033",
+      "locality": "Buchrain",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE158781527",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungs-, Analyse-, Planungs-, Projektmanagement- und Unterstützungsdienstleistungen für natürliche und juristische Personen sowie öffentliche und privat"
+    },
+    {
+      "name": "Winera Capital AG",
+      "address": "Alpenstrasse 11",
+      "npa": "6300",
+      "locality": "Zug",
+      "canton": "ZG",
+      "category": "autre",
+      "uid": "CHE256559361",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Beratungs-, Vermittlungs-, Finanzierungs-, Management-, Planungs- und Koordinationsdienstleistungen sowie den Erwerb, die dauernde Verwaltung und die Verwe"
+    },
+    {
+      "name": "Wunderfeld GmbH",
+      "address": "Eichbüelstrasse 44c",
+      "npa": "9602",
+      "locality": "Kirchberg (SG)",
+      "canton": "SG",
+      "category": "informatique",
+      "uid": "CHE191149990",
+      "description": "Die Gesellschaft bezweckt die Forschung, Entwicklung, Erprobung, den Betrieb, das Hosting, die Lizenzierung, den Vertrieb und die Kommerzialisierung von Softwarelösungen, insbesondere im Bereich der F"
+    },
+    {
+      "name": "xConnector GmbH",
+      "address": "Else-Züblin-Strasse 72",
+      "npa": "8404",
+      "locality": "Winterthur",
+      "canton": "ZH",
+      "category": "commerce",
+      "uid": "CHE466788438",
+      "description": "Die Gesellschaft bezweckt die Entwicklung, den Betrieb, die Vermarktung, den Vertrieb und die Lizenzierung von Softwarelösungen und digitalen Plattformen, insbesondere im Bereich E-Commerce, Prozessau"
+    },
+    {
+      "name": "yougenius GmbH",
+      "address": "Seestrasse 93",
+      "npa": "6047",
+      "locality": "Horw",
+      "canton": "LU",
+      "category": "autre",
+      "uid": "CHE430124896",
+      "description": "Die Gesellschaft bezweckt die Entwicklung, Organisation und Durchführung von physischen und hybriden Veranstaltungen sowie Bildungs-, Erlebnis- und Austauschformaten in den Bereichen persönliche Entwi"
+    },
+    {
+      "name": "ZUBAIR GMBH",
+      "address": "Bahnhofwiese 14",
+      "npa": "8712",
+      "locality": "Stäfa",
+      "canton": "ZH",
+      "category": "informatique",
+      "uid": "CHE494718354",
+      "description": "Die Gesellschaft bezweckt die Erbringung von Arbeiten und Dienstleistungen in den Bereichen Gebäudetechnik, Sanitär, Heizung, Lüftung und Klima sowie den Handel mit Waren im Baubereich. Die Gesellscha"
     }
   ]
 };
