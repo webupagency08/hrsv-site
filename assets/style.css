@@ -9,6 +9,10 @@
   --rouge-profond:#A81B21;
   --anthracite:#16191F;
   --granit:#6B7280;
+  /* Variante pour texte gris posé sur fond neve : #6B7280 n'y donne que
+     4,43:1, sous le seuil AA de 4,5. #686F7C monte a 4,63 pour un ecart
+     visuel imperceptible. */
+  --granit-sur-neve:#686F7C;
   --neve:#F4F5F7;
   --blanc:#FFFFFF;
   --grille:rgba(22,25,31,.07);
@@ -145,6 +149,8 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
   border-left:3px solid transparent;transition:border-color .15s,background .15s;
 }
 .card:hover,.card:focus-visible{border-left-color:var(--rouge);background:var(--neve)}
+.card:hover .card__code,.card:hover .card__count,
+.card:focus-visible .card__code,.card:focus-visible .card__count{color:var(--granit-sur-neve)}
 
 /* Vignette : même traitement désaturé que .band des pages de détail.
    Hauteur fixe + object-fit:cover — les sources ont des rapports variés,
@@ -183,6 +189,7 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
 }
 .ctr{transition:background .1s}
 .ctr:hover{background:var(--neve);cursor:pointer}
+.ctr:hover .ctr__loc,.ctr:hover .ctr__cat,.ctr:hover .ctr__canton{color:var(--granit-sur-neve)}
 .ctr__name{font-weight:600;letter-spacing:-.01em;min-width:220px}
 .ctr:hover .ctr__name a{color:var(--rouge)}
 .ctr__loc,.ctr__cat{color:var(--granit);white-space:nowrap}
@@ -194,7 +201,7 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
 /* --- État vide -------------------------------------------------------- */
 .empty{background:var(--neve);padding:40px 28px;text-align:center}
 .empty__t{font-size:17px;font-weight:700;margin-bottom:6px}
-.empty__h{font-size:14px;color:var(--granit)}
+.empty__h{font-size:14px;color:var(--granit-sur-neve)}
 
 /* --- Bandeau photo désaturé ------------------------------------------- */
 .band{height:180px;overflow:hidden;background:var(--neve)}
