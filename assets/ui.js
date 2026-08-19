@@ -80,21 +80,33 @@
 
   /* --- Cartes canton / métier ----------------------------------------- */
 
+  /* Vignette décorative d'une carte : le libellé est déjà dans le texte
+     de la carte, l'image ne doit donc rien annoncer (alt vide). */
+  function cardPhoto(src) {
+    return '<span class="card__photo">' +
+      '<img src="' + esc(src) + '" alt="" width="480" height="180" ' +
+      'loading="lazy" decoding="async"></span>';
+  }
+
   function cantonCard(canton, count) {
     var muted = count === 0 ? " card--muted" : "";
     return '<a class="card card--canton' + muted + '" href="#/canton/' + esc(canton.code) + '">' +
+      cardPhoto("assets/cantons/thumb/" + canton.code + ".jpg") +
+      '<span class="card__body">' +
       '<span class="card__code">' + esc(canton.code) + "</span>" +
       '<span class="card__name">' + esc(canton.name) + "</span>" +
       '<span class="card__count">' + num(count) + " " + esc(plural(count)) + "</span>" +
-      "</a>";
+      "</span></a>";
   }
 
   function categoryCard(cat, count) {
     var muted = count === 0 ? " card--muted" : "";
     return '<a class="card card--cat' + muted + '" href="#/category/' + esc(cat.id) + '">' +
+      cardPhoto("assets/categories/thumb/" + cat.id + ".jpg") +
+      '<span class="card__body">' +
       '<span class="card__name">' + esc(cat.label) + "</span>" +
       '<span class="card__count">' + num(count) + " " + esc(plural(count)) + "</span>" +
-      "</a>";
+      "</span></a>";
   }
 
   /* --- Tableau dense de sociétés -------------------------------------- */

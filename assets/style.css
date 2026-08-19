@@ -141,10 +141,26 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
 @media(max-width:420px){.cards--4,.cards--3{grid-template-columns:1fr}}
 
 .card{
-  background:var(--blanc);padding:20px 18px;display:flex;flex-direction:column;
-  gap:4px;border-left:3px solid transparent;transition:border-color .15s,background .15s;
+  background:var(--blanc);display:flex;flex-direction:column;
+  border-left:3px solid transparent;transition:border-color .15s,background .15s;
 }
 .card:hover,.card:focus-visible{border-left-color:var(--rouge);background:var(--neve)}
+
+/* Vignette : même traitement désaturé que .band des pages de détail.
+   Hauteur fixe + object-fit:cover — les sources ont des rapports variés,
+   c'est ce qui garantit des cartes de hauteur identique dans une rangée. */
+.card__photo{display:block;flex:none;height:88px;overflow:hidden;background:var(--neve)}
+.card__photo img{
+  width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) contrast(.92) brightness(1.06);opacity:.5;
+  transition:opacity .15s,filter .15s;
+}
+.card:hover .card__photo img,.card:focus-visible .card__photo img{
+  opacity:.72;filter:grayscale(.8) contrast(.94) brightness(1.04);
+}
+@media(max-width:420px){.card__photo{height:76px}}
+
+.card__body{display:flex;flex-direction:column;gap:4px;padding:16px 18px 20px}
 .card__code{
   font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--granit);
 }
