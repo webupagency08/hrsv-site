@@ -93,6 +93,11 @@ h3{font-size:17px;font-weight:700;letter-spacing:-.015em}
   background:var(--anthracite);color:var(--blanc);padding:12px 18px;
 }
 .skip-link:focus{left:0}
+/* Cible du lien d'évitement : #app porte tabindex="-1" pour recevoir le focus
+   par script. Certains navigateurs dessinent alors un contour au simple clic
+   souris dans la page — on le retire, ce conteneur n'est pas un contrôle et
+   le repère visuel reste le lien d'évitement lui-même. */
+#app:focus{outline:none}
 
 /* =====================================================================
    Composants

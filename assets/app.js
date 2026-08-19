@@ -54,7 +54,7 @@
         l.toUpperCase() + "</option>";
     }).join("");
 
-    return '<a class="skip-link" href="#/">Aller au contenu</a>' +
+    return '<a class="skip-link" href="#app" data-skip-link>' + esc(t("a11y.skip")) + "</a>" +
       '<header class="hd"><div class="wrap hd__in">' +
       '<a class="hd__brand" href="#/" aria-label="' + BRAND + '">' +
       '<img src="assets/logo-horizontal.svg" alt="' + BRAND + '" height="28">' +
@@ -483,6 +483,18 @@
 
   /* --- Liaisons d'événements --------------------------------------------- */
 
+  /* Cible du lien d'évitement. Le conteneur n'est pas un contrôle : il reçoit
+     tabindex="-1" pour être focalisable par script sans entrer dans l'ordre
+     de tabulation. */
+  function focusContent() {
+    var app = document.getElementById("app");
+    if (!app) return;
+    app.setAttribute("tabindex", "-1");
+    app.focus();
+    /* Certains navigateurs ne défilent pas sur un focus programmé. */
+    if (app.getBoundingClientRect().top < 0) app.scrollIntoView();
+  }
+
   function applyFilters(ff) {
     var params = [];
     var q = ff.querySelector('input[name="q"]');
@@ -528,6 +540,19 @@
   }
 
   function bind() {
+    /* Lien d'évitement : le routage se faisant par ancre, laisser le
+       navigateur suivre le href changerait la route en cours (« #app » serait
+       lu comme une route et afficherait la page introuvable, « #/ » renvoie
+       à l'accueil). On neutralise la navigation et on déplace le focus par
+       script : le hash ne bouge pas, l'utilisateur au clavier garde sa place. */
+    var skip = document.querySelector("[data-skip-link]");
+    if (skip) {
+      skip.addEventListener("click", function (e) {
+        e.preventDefault();
+        focusContent();
+      });
+    }
+
     var sel = document.querySelector("[data-lang-select]");
     if (sel) {
       sel.addEventListener("change", function () {
