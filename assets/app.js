@@ -494,6 +494,39 @@
     location.hash = "#/search" + (params.length ? "?" + params.join("&") : "");
   }
 
+  /* Le site est statique : aucun backend, aucune requête vers un tiers.
+     La demande d'inscription part donc par la messagerie de l'utilisateur.
+     Renvoie l'URL mailto composée + le nom saisi (exposé pour test manuel). */
+  function signupMailto(form) {
+    function val(n) {
+      var el = form.querySelector('[name="' + n + '"]');
+      return el ? String(el.value).trim() : "";
+    }
+    var company = val("company");
+    var canton = val("canton");
+    var cat = val("cat");
+
+    /* Une ligne par champ renseigné ; les champs vides sont omis.
+       Canton et corps de métier partent en libellé lisible, pas en code. */
+    var body = [
+      [t("signup.company"), company],
+      [t("signup.contactName"), val("contact")],
+      [t("signup.email"), val("email")],
+      [t("signup.phone"), val("phone")],
+      [t("signup.canton"), canton ? cantonName(canton) : ""],
+      [t("signup.trade"), cat ? catLabel(cat) : ""]
+    ].filter(function (p) { return p[1]; })
+      .map(function (p) { return p[0] + " : " + p[1]; })
+      .join("\r\n");
+
+    return {
+      company: company,
+      url: "mailto:" + EMAIL +
+        "?subject=" + encodeURIComponent(t("signup.mailSubject", { name: company })) +
+        "&body=" + encodeURIComponent(body)
+    };
+  }
+
   function bind() {
     var sel = document.querySelector("[data-lang-select]");
     if (sel) {
@@ -528,11 +561,18 @@
     if (sf) {
       sf.addEventListener("submit", function (e) {
         e.preventDefault();
-        var name = sf.querySelector('input[name="company"]').value.trim() || "—";
+        var m = signupMailto(sf);
+
+        /* Message affiché avant d'ouvrir la messagerie : il doit rester
+           lisible même si le client de messagerie prend la main. */
         document.getElementById("signup-result").innerHTML =
           '<div class="trust trust--ok"><p class="trust__p">' +
-          t("signup.done", { name: esc(name) }) + "</p></div>";
-        sf.reset();
+          t("signup.done", { name: esc(m.company || "—"), email: esc(EMAIL) }) +
+          "</p></div>";
+
+        /* Pas de sf.reset() : si aucune messagerie ne s'ouvre, la saisie
+           doit rester à l'écran pour être recopiée. */
+        window.location.href = m.url;
       });
     }
   }
@@ -543,7 +583,8 @@
     render: render,
     data: { COMPANIES: COMPANIES, CANTONS: CANTONS, CATEGORIES: CATEGORIES },
     helpers: { inCanton: inCanton, inCategory: inCategory, cantonName: cantonName,
-               catLabel: catLabel, norm: norm, byId: byId }
+               catLabel: catLabel, norm: norm, byId: byId,
+               signupMailto: signupMailto }
   };
 
   window.addEventListener("hashchange", render);
