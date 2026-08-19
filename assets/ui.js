@@ -50,7 +50,13 @@
       "<h1>" + esc(o.title) + "</h1>" +
       (o.lede ? '<p class="lede">' + esc(o.lede) + "</p>" : "") +
       (o.count !== undefined
-        ? '<p class="phead__count"><strong>' + num(o.count) + "</strong> " + esc(plural(o.count)) + "</p>"
+        ? '<p class="phead__count"><strong>' + num(o.count) + "</strong> " + esc(plural(o.count)) +
+          /* Vue filtrée : on annonce aussi le total du périmètre, sans quoi
+             le lecteur ne sait pas sur quoi porte le compte affiché. */
+          (o.total !== undefined && o.total !== o.count
+            ? " " + esc(t("list.ofTotal", { n: num(o.total) }))
+            : "") +
+          "</p>"
         : "") +
       "</header>";
   }
@@ -64,6 +70,37 @@
       '<input class="sfield__input" id="q" name="q" type="search" autocomplete="off" ' +
       'placeholder="' + esc(t("home.searchPlaceholder")) + '" value="' + esc(value || "") + '">' +
       '<button class="sfield__btn btn btn--rouge" type="submit">' + esc(t("home.search")) + "</button>" +
+      "</form>";
+  }
+
+  /* --- État vide -------------------------------------------------------- */
+
+  function emptyBlock(title, hint) {
+    return '<div class="empty"><p class="empty__t">' + esc(title) + "</p>" +
+      '<p class="empty__h">' + esc(hint) + "</p></div>";
+  }
+
+  /* --- Barre de filtres ------------------------------------------------ */
+
+  /* Une seule barre pour la recherche et pour les vues denses. La vue passe sa
+     route de base : les filtres partent en paramètres de requête dessus, et y
+     revenir sans paramètre — c'est le bouton de remise à zéro — redonne la vue
+     non filtrée. `selects` contient déjà ses <option>, la vue seule sait quelles
+     valeurs son périmètre autorise. */
+  function filterBar(o) {
+    var selects = (o.selects || []).map(function (s) {
+      return '<select class="filters__s" name="' + esc(s.name) +
+        '" aria-label="' + esc(s.label) + '">' + s.options + "</select>";
+    }).join("");
+    return '<form class="filters" data-filter-form="' + esc(o.base) + '">' +
+      '<label class="sr-only" for="filter-q">' + esc(t("home.searchLabel")) + "</label>" +
+      '<input class="filters__q" id="filter-q" name="q" type="search" autocomplete="off" ' +
+      'value="' + esc(o.q || "") + '" ' +
+      'placeholder="' + esc(o.placeholder || t("home.searchPlaceholder")) + '">' +
+      selects +
+      (o.active
+        ? '<a class="filters__reset" href="' + esc(o.base) + '">' + esc(t("search.reset")) + "</a>"
+        : "") +
       "</form>";
   }
 
@@ -113,10 +150,7 @@
 
   function companyTable(companies, opts) {
     opts = opts || {};
-    if (!companies.length) {
-      return '<div class="empty"><p class="empty__t">' + esc(t("list.empty")) + "</p>" +
-        '<p class="empty__h">' + esc(t("list.emptyHint")) + "</p></div>";
-    }
+    if (!companies.length) return emptyBlock(t("list.empty"), t("list.emptyHint"));
     var showCanton = opts.showCanton !== false;
     var head = "<thead><tr>" +
       "<th>" + esc(t("list.company")) + "</th>" +
@@ -154,7 +188,8 @@
   window.SC_UI = {
     esc: esc, num: num, companyId: companyId, plural: plural,
     pageHeader: pageHeader, searchField: searchField, statBlock: statBlock,
-    cantonCard: cantonCard, categoryCard: categoryCard,
+    cantonCard: cantonCard, categoryCard: categoryCard, emptyBlock: emptyBlock,
+    filterBar: filterBar,
     companyTable: companyTable, photoBand: photoBand, trustBlock: trustBlock
   };
 })();

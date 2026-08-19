@@ -289,7 +289,7 @@ main{display:block}
 @media(max-width:720px){.hero{padding:44px 0 36px}}
 
 /* =====================================================================
-   Filtres de recherche
+   Barre de filtres — recherche et vues denses
    ===================================================================== */
 .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .filters__q{
@@ -305,6 +305,10 @@ main{display:block}
 .filters__reset{font-size:13px;color:var(--granit);border-bottom:1px solid var(--filet)}
 .filters__reset:hover{color:var(--rouge);border-bottom-color:var(--rouge)}
 .trunc{margin-top:14px}
+/* En tête d'un tableau dense, la barre est posée dans la même section que les
+   lignes : une simple respiration l'en sépare, pour qu'elle se lise comme leur
+   prolongement et non comme un encadré rapporté. */
+.filters+.tablewrap,.filters+.empty{margin-top:22px}
 @media(max-width:560px){.filters{flex-direction:column;align-items:stretch}}
 
 /* =====================================================================

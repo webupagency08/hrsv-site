@@ -46,6 +46,46 @@
     return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   }
 
+  /* Filtre texte commun : nom et localité, NPA compris — c'est ce que la
+     colonne « Localité » affiche, taper « 8001 » doit donc trouver. */
+  function matchText(c, nq) {
+    if (!nq) return true;
+    return norm(c.name).indexOf(nq) !== -1 ||
+           norm(c.locality).indexOf(nq) !== -1 ||
+           norm(c.npa).indexOf(nq) !== -1;
+  }
+
+  /* Options d'une facette. Uniquement les valeurs présentes dans le périmètre
+     de la page, avec leur effectif : proposer un filtre qui ne donnerait rien
+     ici n'aiderait personne. Les mieux fournies d'abord, comme les cartes des
+     pages d'index. La valeur sélectionnée est conservée même absente du
+     périmètre, sinon le sélecteur mentirait sur l'URL en cours. */
+  function facetOptions(list, key, labelOf, selected, allLabel) {
+    var counts = {}, values = [];
+    list.forEach(function (c) {
+      if (counts[c[key]] === undefined) { counts[c[key]] = 0; values.push(c[key]); }
+      counts[c[key]]++;
+    });
+    if (selected && counts[selected] === undefined) { counts[selected] = 0; values.push(selected); }
+    values.sort(function (a, b) {
+      return counts[b] - counts[a] ||
+             String(labelOf(a)).localeCompare(String(labelOf(b)), "fr");
+    });
+    return '<option value="">' + esc(allLabel) + "</option>" +
+      values.map(function (v) {
+        return '<option value="' + esc(v) + '"' + (v === selected ? " selected" : "") + ">" +
+          esc(labelOf(v)) + " (" + UI.num(counts[v]) + ")</option>";
+      }).join("");
+  }
+
+  /* « Aucun résultat » quand un filtre est en cause, « aucune entreprise »
+     quand la page est vide d'elle-même : ce n'est pas la même information. */
+  function emptyFor(active) {
+    return active
+      ? UI.emptyBlock(t("search.noResult"), t("search.noResultHint"))
+      : UI.emptyBlock(t("list.empty"), t("list.emptyHint"));
+  }
+
   /* --- Chrome : en-tête ------------------------------------------------ */
 
   function header() {
@@ -175,11 +215,26 @@
 
   /* --- Vue : détail d'un canton ------------------------------------------ */
 
-  function viewCanton(code) {
+  /* Les filtres voyagent en paramètres de requête sur la route existante :
+     « #/canton/ZH » sans paramètre reste la liste complète, et une vue filtrée
+     se partage et se recharge telle quelle. Pas de plafond d'affichage ici —
+     la page rend ses 1 125 lignes en quelques millisecondes, et tronquer
+     changerait ce que « #/canton/ZH » a toujours montré. */
+  function viewCanton(code, query) {
     code = String(code).toUpperCase();
-    var list = inCanton(code).slice().sort(function (a, b) {
-      return a.name.localeCompare(b.name, "fr");
-    });
+    var all = inCanton(code);
+    var term = (query.q || "").trim();
+    var fCat = query.cat || "";
+    var nq = norm(term);
+    var active = !!(term || fCat);
+
+    /* Le sélecteur compte sur le périmètre déjà réduit par le texte : une
+       option affichée mène donc toujours à des lignes. */
+    var scope = nq ? all.filter(function (c) { return matchText(c, nq); }) : all;
+    var list = scope.filter(function (c) {
+      return !fCat || c.category === fCat;
+    }).sort(function (a, b) { return a.name.localeCompare(b.name, "fr"); });
+
     var name = cantonName(code);
     return UI.photoBand("assets/cantons/" + code + ".jpg", name) +
       '<div class="wrap">' +
@@ -187,19 +242,41 @@
         crumbs: [{ label: t("bc.home"), href: "#/" },
                  { label: t("cantons.title"), href: "#/cantons" },
                  { label: name }],
-        eyebrow: code, title: name, count: list.length
+        eyebrow: code, title: name, count: list.length, total: all.length
       }) +
       '<section class="sect">' +
-      UI.companyTable(list, { catLabel: catLabel, showCanton: false }) +
+      (all.length
+        ? UI.filterBar({
+            base: "#/canton/" + code, q: term, active: active,
+            placeholder: t("filter.placeholder"),
+            selects: [{
+              name: "cat", label: t("list.trade"),
+              options: facetOptions(scope, "category", catLabel, fCat, t("search.filterTrade"))
+            }]
+          })
+        : "") +
+      (list.length
+        ? UI.companyTable(list, { catLabel: catLabel, showCanton: false })
+        : emptyFor(active)) +
       "</section></div>";
   }
 
   /* --- Vue : détail d'un corps de métier --------------------------------- */
 
-  function viewCategory(id) {
-    var list = inCategory(id).slice().sort(function (a, b) {
-      return a.name.localeCompare(b.name, "fr");
-    });
+  /* Même dispositif que la vue canton, sélecteur inversé : on est déjà dans
+     un métier, c'est le canton qu'on filtre. */
+  function viewCategory(id, query) {
+    var all = inCategory(id);
+    var term = (query.q || "").trim();
+    var fCanton = query.canton || "";
+    var nq = norm(term);
+    var active = !!(term || fCanton);
+
+    var scope = nq ? all.filter(function (c) { return matchText(c, nq); }) : all;
+    var list = scope.filter(function (c) {
+      return !fCanton || c.canton === fCanton;
+    }).sort(function (a, b) { return a.name.localeCompare(b.name, "fr"); });
+
     var label = catLabel(id);
     return UI.photoBand("assets/categories/" + id + ".jpg", label) +
       '<div class="wrap">' +
@@ -207,10 +284,20 @@
         crumbs: [{ label: t("bc.home"), href: "#/" },
                  { label: t("trades.title"), href: "#/categories" },
                  { label: label }],
-        eyebrow: t("trades.title"), title: label, count: list.length
+        eyebrow: t("trades.title"), title: label, count: list.length, total: all.length
       }) +
       '<section class="sect">' +
-      UI.companyTable(list, { catLabel: catLabel }) +
+      (all.length
+        ? UI.filterBar({
+            base: "#/category/" + id, q: term, active: active,
+            placeholder: t("filter.placeholder"),
+            selects: [{
+              name: "canton", label: t("list.canton"),
+              options: facetOptions(scope, "canton", cantonName, fCanton, t("search.filterCanton"))
+            }]
+          })
+        : "") +
+      (list.length ? UI.companyTable(list, { catLabel: catLabel }) : emptyFor(active)) +
       "</section></div>";
   }
 
@@ -226,9 +313,7 @@
       if (fCanton && c.canton !== fCanton) return false;
       if (fCat && c.category !== fCat) return false;
       if (!nq) return true;
-      return norm(c.name).indexOf(nq) !== -1 ||
-             norm(c.locality).indexOf(nq) !== -1 ||
-             norm(c.npa).indexOf(nq) !== -1 ||
+      return matchText(c, nq) ||
              norm(cantonName(c.canton)).indexOf(nq) !== -1 ||
              norm(catLabel(c.category)).indexOf(nq) !== -1;
     });
@@ -251,8 +336,7 @@
 
     var body = res.length
       ? UI.companyTable(res.slice(0, 300), { catLabel: catLabel })
-      : '<div class="empty"><p class="empty__t">' + esc(t("search.noResult")) + "</p>" +
-        '<p class="empty__h">' + esc(t("search.noResultHint")) + "</p></div>";
+      : UI.emptyBlock(t("search.noResult"), t("search.noResultHint"));
 
     var truncated = res.length > 300
       ? '<p class="legende trunc">' + UI.num(res.length) + " " + esc(UI.plural(res.length)) +
@@ -265,14 +349,13 @@
         eyebrow: t("search.title"), title: title, count: res.length
       }) +
       '<section class="sect--tight">' +
-      '<form class="filters" data-filter-form>' +
-      '<input type="search" name="q" value="' + esc(term) + '" ' +
-      'placeholder="' + esc(t("home.searchPlaceholder")) + '" class="filters__q">' +
-      '<select name="canton" class="filters__s">' + cantonOpts + "</select>" +
-      '<select name="cat" class="filters__s">' + catOpts + "</select>" +
-      (term || fCanton || fCat
-        ? '<a class="filters__reset" href="#/search">' + esc(t("search.reset")) + "</a>" : "") +
-      "</form>" + truncated + "</section>" +
+      UI.filterBar({
+        base: "#/search", q: term, active: !!(term || fCanton || fCat),
+        selects: [
+          { name: "canton", label: t("list.canton"), options: cantonOpts },
+          { name: "cat", label: t("list.trade"), options: catOpts }
+        ]
+      }) + truncated + "</section>" +
       '<section class="sect">' + body + "</section></div>";
   }
 
@@ -440,6 +523,13 @@
 
   /* --- Routeur ---------------------------------------------------------- */
 
+  /* Une URL mal formée (« %ZZ ») ferait lever decodeURIComponent et laisserait
+     la page blanche : on retombe sur la valeur brute plutôt que sur rien. */
+  function decodeParam(s) {
+    try { return decodeURIComponent(String(s).replace(/\+/g, " ")); }
+    catch (e) { return String(s); }
+  }
+
   function parseHash() {
     var h = location.hash.replace(/^#/, "") || "/";
     var qi = h.indexOf("?");
@@ -449,8 +539,7 @@
       h.slice(qi + 1).split("&").forEach(function (pair) {
         if (!pair) return;
         var kv = pair.split("=");
-        query[decodeURIComponent(kv[0])] =
-          decodeURIComponent((kv[1] || "").replace(/\+/g, " "));
+        query[decodeParam(kv[0])] = decodeParam(kv[1] || "");
       });
     }
     return { path: path, parts: path.split("/").filter(Boolean), query: query };
@@ -464,8 +553,8 @@
     if (p.length === 0) html = viewHome();
     else if (p[0] === "cantons") html = viewCantons();
     else if (p[0] === "categories") html = viewCategories();
-    else if (p[0] === "canton" && p[1]) html = viewCanton(p[1]);
-    else if (p[0] === "category" && p[1]) html = viewCategory(p[1]);
+    else if (p[0] === "canton" && p[1]) html = viewCanton(p[1], r.query);
+    else if (p[0] === "category" && p[1]) html = viewCategory(p[1], r.query);
     else if (p[0] === "company" && p[1]) html = viewCompany(decodeURIComponent(p[1]));
     else if (p[0] === "search") html = viewSearch(r.query);
     else if (p[0] === "inscription") html = viewSignup();
@@ -495,7 +584,10 @@
     if (app.getBoundingClientRect().top < 0) app.scrollIntoView();
   }
 
+  /* Les filtres s'appliquent sur la route qui les porte : la vue recherche,
+     mais aussi une page canton ou métier. Le formulaire annonce sa base. */
   function applyFilters(ff) {
+    var base = ff.getAttribute("data-filter-form") || "#/search";
     var params = [];
     var q = ff.querySelector('input[name="q"]');
     if (q && q.value.trim()) params.push("q=" + encodeURIComponent(q.value.trim()));
@@ -503,7 +595,7 @@
     var kt = ff.querySelector('select[name="cat"]');
     if (kc && kc.value) params.push("canton=" + encodeURIComponent(kc.value));
     if (kt && kt.value) params.push("cat=" + encodeURIComponent(kt.value));
-    location.hash = "#/search" + (params.length ? "?" + params.join("&") : "");
+    location.hash = base + (params.length ? "?" + params.join("&") : "");
   }
 
   /* Le site est statique : aucun backend, aucune requête vers un tiers.
@@ -580,6 +672,15 @@
     if (ff) {
       ff.addEventListener("submit", function (e) { e.preventDefault(); applyFilters(ff); });
       ff.addEventListener("change", function () { applyFilters(ff); });
+      /* La barre n'a pas de bouton d'envoi — la soumission implicite d'un
+         formulaire sans bouton n'est pas garantie d'un navigateur à l'autre.
+         On valide donc la saisie à Entrée nous-mêmes. */
+      ff.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" && e.target.tagName === "INPUT") {
+          e.preventDefault();
+          applyFilters(ff);
+        }
+      });
     }
 
     var sf = document.querySelector("[data-signup-form]");
