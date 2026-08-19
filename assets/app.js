@@ -12,7 +12,7 @@
   var esc = UI.esc;
 
   var BRAND = "swisscherche";
-  var EMAIL = "info@swisscherche.ch";
+  var EMAIL = "buchhalltung@hrsv.ch";   /* domaine réellement détenu — à basculer sur swisscherche.ch le jour de son acquisition */
   var ADDRESS = "Route du Grand-Lancy 53 · 1212 Grand-Lancy";
 
   /* --- Données --------------------------------------------------------- */
