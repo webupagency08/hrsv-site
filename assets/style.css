@@ -368,3 +368,16 @@ main{display:block}
 .form__send{justify-content:center;margin-top:6px}
 .trust--ok{margin-bottom:24px}
 @media(max-width:820px){.signup{grid-template-columns:1fr 1fr;gap:28px}}
+
+/* =====================================================================
+   Préférence système : mouvement réduit
+   Le défilement doux et les transitions peuvent déclencher des troubles
+   vestibulaires. On les neutralise sans rien changer à la mise en page.
+   ===================================================================== */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;scroll-behavior:auto !important;
+  }
+}
